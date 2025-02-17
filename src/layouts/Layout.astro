@@ -1,25 +1,43 @@
 ---
+import Header from "../components/Header.astro";
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Lucio Benfante",
+  description = "Pagina personale di Lucio Benfante, sviluppatore software e docente",
+}: Props = Astro.props;
+
 import "../styles/global.css";
 ---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" crossorigin="use-credentials" href="/site.webmanifest" />	
+    <meta name="generator" content={Astro.generator} />
+	<meta name="description" content={ description } />
+    <title>{ title }</title>
+  </head>
+  <body>
+	<Header />
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>

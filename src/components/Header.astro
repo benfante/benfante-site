@@ -1,0 +1,17 @@
+---
+import Menu from "./Menu";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.svg";
+---
+
+<header
+  class="flex items-center justify-between border-b border-gray-400 py-8 px-8"
+>
+  <a href="/" class="flex items-center space-x-4">
+    <Image src={logo} width={64} alt="logo" loading="eager" />
+    <div class="text-4xl font-bold text-[#DD0000FF]">Lucio Benfante</div>
+  </a>
+  <nav>
+    <Menu client:load />
+  </nav>
+</header>
