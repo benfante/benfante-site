@@ -8,7 +8,7 @@ export default function Menu() {
       <section className="MOBILE-MENU flex lg:hidden">
         <div
           className="HAMBURGER-ICON space-y-2"
-          onClick={() => setIsOpen((prev) => !prev)} // toggle isNavOpen state on click
+          onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -16,11 +16,10 @@ export default function Menu() {
         </div>
 
         <div className={isOpen ? "showMenuNav" : "hideMenuNav"}>
-          {" "}
-          // toggle class based on isNavOpen state
+          {" "}          
           <div
             className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
-            onClick={() => setIsOpen(false)} // change isNavOpen state to false to close the menu
+            onClick={() => setIsOpen(false)}
           >
             <svg
               className="h-8 w-8 text-gray-600"

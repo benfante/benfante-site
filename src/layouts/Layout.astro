@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "@components/Header.astro";
 
 export interface Props {
   title?: string;
@@ -18,26 +18,21 @@ import "../styles/global.css";
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-	<link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" crossorigin="use-credentials" href="/site.webmanifest" />	
+    <link
+      rel="manifest"
+      crossorigin="use-credentials"
+      href="/site.webmanifest"
+    />
     <meta name="generator" content={Astro.generator} />
-	<meta name="description" content={ description } />
-    <title>{ title }</title>
+    <meta name="description" content={description} />
+    <title>{title}</title>
   </head>
-  <body>
-	<Header />
+  <body class="mx-1 p-0 md:mx-16 lg:mx-32">
+    <Header/>
     <slot />
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

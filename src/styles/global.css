@@ -1,2 +1,27 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
+
+@theme {
+  --color-foreground: var(--theme-color-foreground);
+  --color-background: var(--theme-color-background);
+}
+
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --theme-color-foreground: hsl(0 0% 8%);
+    --theme-color-background: hsl(0 0% 98%);
+  }
+
+  .dark {
+    --theme-color-foreground: hsl(0 0% 98%);
+    --theme-color-background: hsl(0 0% 3.9%);
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
