@@ -12,7 +12,7 @@
 @layer base {
   :root {
     --theme-color-foreground: hsl(0 0% 8%);
-    --theme-color-background: hsl(0 0% 98%);
+    --theme-color-background: hsl(0 0% 99%);
   }
 
   .dark {
@@ -24,4 +24,8 @@
 body {
   color: var(--color-foreground);
   background-color: var(--color-background);
+}
+
+a {
+  @apply text-gray-600 dark:text-gray-200 hover:text-red-600 hover:underline font-medium;
 }

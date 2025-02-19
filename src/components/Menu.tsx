@@ -35,13 +35,13 @@ export default function Menu() {
             </svg>
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-            <li className="border-b border-gray-400 my-8 uppercase">
+            <li className="border-b border-gray-400 my-8">
               <a href="/about">About</a>
             </li>
-            <li className="border-b border-gray-400 my-8 uppercase">
+            <li className="border-b border-gray-400 my-8">
               <a href="/portfolio">Portfolio</a>
             </li>
-            <li className="border-b border-gray-400 my-8 uppercase">
+            <li className="border-b border-gray-400 my-8">
               <a href="/contact">Contact</a>
             </li>
           </ul>
@@ -70,7 +70,7 @@ export default function Menu() {
         height: 100vh;
         top: 0;
         left: 0;
-        background: white;
+        background: var(--color-background);
         z-index: 10;
         display: flex;
         flex-direction: column;

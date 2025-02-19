@@ -1,5 +1,6 @@
 ---
 import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 
 export interface Props {
   title?: string;
@@ -15,7 +16,7 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="it">
+<html lang="it" class="min-h-screen">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,8 +32,11 @@ import "../styles/global.css";
     <meta name="description" content={description} />
     <title>{title}</title>
   </head>
-  <body class="mx-1 p-0 md:mx-16 lg:mx-32">
+  <body class="mx-1 p-0 md:mx-16 lg:mx-32 min-h-screen">
     <Header/>
-    <slot />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
