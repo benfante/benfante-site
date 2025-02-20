@@ -10,7 +10,10 @@
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@stores/*": ["src/stores/*"]
+      "@stores/*": ["src/stores/*"],
+      "@styles/*": ["src/styles/*"],
+      "@libs/*": ["src/libs/*"],
+      "@paraglide/*": ["src/libs/paraglide/*"],
     }
   }
 }

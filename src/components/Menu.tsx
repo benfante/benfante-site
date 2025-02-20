@@ -1,7 +1,13 @@
 import { useState } from "react";
+import * as m from "@paraglide/messages"
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const manuItems = [
+    { label: m.blog(), path: "/blog" },
+    { label: m.curriculum(), path: "/cv" },
+  ];
 
   return (
     <>
@@ -16,7 +22,7 @@ export default function Menu() {
         </div>
 
         <div className={isOpen ? "showMenuNav" : "hideMenuNav"}>
-          {" "}          
+          {" "}
           <div
             className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
             onClick={() => setIsOpen(false)}
@@ -35,29 +41,21 @@ export default function Menu() {
             </svg>
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-            <li className="border-b border-gray-400 my-8">
-              <a href="/about">About</a>
-            </li>
-            <li className="border-b border-gray-400 my-8">
-              <a href="/portfolio">Portfolio</a>
-            </li>
-            <li className="border-b border-gray-400 my-8">
-              <a href="/contact">Contact</a>
-            </li>
+            {manuItems.map((item) => (
+              <li key={item.label} className="border-b border-gray-400 my-8">
+                <a href={item.path}>{item.label}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
+        {manuItems.map((item) => (
+          <li key={item.label}>
+            <a href={item.path}>{item.label}</a>
+          </li>
+        ))}
       </ul>
       <style>{`
       .hideMenuNav {

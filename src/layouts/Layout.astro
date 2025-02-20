@@ -1,6 +1,7 @@
 ---
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import { languageTag } from "@paraglide/runtime";
 
 export interface Props {
   title?: string;
@@ -12,11 +13,11 @@ const {
   description = "Pagina personale di Lucio Benfante, sviluppatore software e docente",
 }: Props = Astro.props;
 
-import "../styles/global.css";
+import "@styles/global.css";
 ---
 
 <!doctype html>
-<html lang="it" class="min-h-screen">
+<html lang={languageTag()} class="min-h-screen">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +31,7 @@ import "../styles/global.css";
     />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <title>{title}</title>
+    <title>{title} - Lucio Benfante</title>
   </head>
   <body class="mx-1 p-0 md:mx-16 lg:mx-32 min-h-screen">
     <Header/>

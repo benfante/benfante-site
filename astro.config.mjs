@@ -1,18 +1,30 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
-import react from '@astrojs/react';
+import react from "@astrojs/react";
+import paraglide from "@inlang/paraglide-astro";
 
 // https://astro.build/config
 export default defineConfig({
   i18n: {
     locales: ["it", "en"],
     defaultLocale: "it",
+    fallback: {
+      en: "it",
+    },
+    routing: {
+      fallbackType: "rewrite",
+    },
   },
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
-  integrations: [react()]
+  integrations: [react(),
+    paraglide({
+      project: "./project.inlang",
+      outdir: "./src/libs/paraglide",
+    }),
+  ],
 });

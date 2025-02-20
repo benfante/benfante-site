@@ -44,7 +44,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="w-10 h-5 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
+      className="w-10 h-5 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow cursor-pointer"
       onClick={toggleTheme}
       suppressHydrationWarning={true}
     >
