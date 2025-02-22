@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
+    "@fontsource/permanent-marker": "^5.1.1",
     "@inlang/paraglide-astro": "^0.3.5",
     "@nanostores/persistent": "^0.10.2",
     "@nanostores/react": "^0.8.4",

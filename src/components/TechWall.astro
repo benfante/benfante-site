@@ -1,0 +1,53 @@
+---
+import TechBadge from './TechBadge.astro'
+
+const techs = [
+    { title: "Java", image: "Java.svg", imageDescription: "Java logo" },
+    { title: "Spring", image: "Spring.svg", imageDescription: "Spring logo" },
+    { title: "Spring Boot", image: "spring-boot.svg", imageDescription: "Spring Boot logo" },
+    { title: "Hibernate", image: "Hibernate.svg", imageDescription: "Hibernate logo" },
+    { title: "JOOQ", image: "jooq-logo-black.png", imageDescription: "JOOQ logo"},
+    { title: "JUnit", image: "JUnit.svg", imageDescription: "JUnit logo" },
+    { title: "Maven", image: "Apache-Maven.svg", imageDescription: "Maven logo" },
+    { title: "Tomcat", image: "Apache-Tomcat.svg", imageDescription: "Tomcat logo" },
+    { title: "SQL", image: "sql.svg", imageDescription: "SQL logo" },
+    { title: "PostgreSQL", image: "PostgresSQL.svg", imageDescription: "PostgreSQL logo" },
+    { title: "MySQL", image: "MySQL.svg", imageDescription: "MySQL logo" },
+    { title: "MongoDB", image: "MongoDB.svg", imageDescription: "MongoDB logo" },
+    { title: "JavaScript", image: "JavaScript.svg", imageDescription: "JavaScript logo" },
+    { title: "TypeScript", image: "TypeScript.svg", imageDescription: "TypeScript logo" },
+    { title: "Angular", image: "Angular.svg", imageDescription: "Angular logo" },
+    { title: "React", image: "React.svg", imageDescription: "React logo" },
+    { title: "Node.js", image: "Node.js.svg", imageDescription: "Node.js logo" },
+    { title: "NPM", image: "NPM.svg", imageDescription: "NPM logo" },
+    { title: "HTML5", image: "HTML5.svg", imageDescription: "HTML5 logo" },
+    { title: "CSS3", image: "CSS3.svg", imageDescription: "CSS3 logo" },
+    { title: "Tailwind CSS", image: "Tailwind-CSS.svg", imageDescription: "Tailwind CSS logo" },    
+    { title: "Bootstrap", image: "Bootstrap.svg", imageDescription: "Bootstrap logo" },
+    { title: "Astro", image: "Astro.svg", imageDescription: "Astro logo" },
+    { title: "Next.js", image: "Next.js.svg", imageDescription: "Next.js logo" },
+    { title: "Markdown", image: "Markdown.svg", imageDescription: "Markdown logo" },
+    { title: "JSON", image: "JSON.svg", imageDescription: "JSON logo" },
+    { title: "YAML", image: "YAML.svg", imageDescription: "YAML logo" },
+    { title: "XML", image: "XML.svg", imageDescription: "XML logo" },
+    { title: "Docker", image: "Docker.svg", imageDescription: "Docker logo" },
+    { title: "Git", image: "Git.svg", imageDescription: "Git logo" },
+    { title: "GitHub", image: "GitHub.svg", imageDescription: "GitHub logo" },
+    { title: "GitLab", image: "GitLab.svg", imageDescription: "GitLab logo" },
+    { title: "Visual Studio Code", image: "Visual-Studio-Code-(VS-Code).svg", imageDescription: "Visual Studio Code logo" },
+    { title: "Eclipse", image: "Eclipse-IDE.svg", imageDescription: "Eclipse logo" },
+    { title: "Vim", image: "Vim.svg", imageDescription: "Vim logo"},
+    { title: "DBeaver", image: "DBeaver.svg", imageDescription: "DBeaver logo" },
+    { title: "Postman", image: "Postman.svg", imageDescription: "Postman logo" },
+    { title: "Swagger", image: "Swagger.svg", imageDescription: "Swagger logo" },
+    { title: "Debian", image: "Debian.svg", imageDescription: "Debian logo"},
+]
+
+---
+<div class="flex flex-wrap justify-between">
+    {techs.map(tech => (
+        <div class="mr-2 mb-2">
+            <TechBadge {...tech} />
+        </div>
+    ))}
+</div>

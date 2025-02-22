@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import picture from "@assets/BenfanteLucio.png";
+import "@fontsource/permanent-marker";
+---
+
+<div class="flex flex-nowrap items-start bg-orange-200 dark:bg-orange-950 p-2">
+    <div class="m-2 grow min-w-16">
+        <Image src={picture} alt="Lucio Benfante" />
+    </div>
+    <div class="m-2 grow">
+        <h1 class="text-3xl font-medium">Lucio Benfante</h1>
+        <h2 class="italic">Software developer and teacher</h2>
+        {Astro.currentLocale === "it" ?
+        <div class="pt-2">
+            <p>
+                Ciao, sono Lucio Benfante, da oltre 25 anni lavoro come
+                consulente per lo sviluppo software in ambito backend e
+                frontend.
+            </p>
+            <p>
+                All'attività di sviluppo ho sempre affiancato quella di docente
+                per istituzioni pubbliche e private, e in corsi professionali
+                per le aziende.
+            </p>
+        </div>
+        :
+        <div class="pt-2">
+            <p>
+                Hi, I'm Lucio Benfante, and I have been working as a software
+                development consultant in both backend and frontend for over 25
+                years.
+            </p>
+            <p>
+                Alongside my development work, I have always been a teacher for
+                public and private institutions, and in professional courses for
+                companies.
+            </p>
+        </div>
+        }
+    </div>
+</div>
+<style>
+    @reference "../styles/global.css";
+    h1 {
+        font-family: "Permanent Marker", cursive;
+    }
+    p {
+        @apply mt-1;
+    }
+</style>

@@ -14,6 +14,7 @@ export const localizePath = (path: string, lang: AvailableLanguageTag) => {
 export function getRouteFromUrl(url: URL): string {
     const pathname = new URL(url).pathname;
     const parts = pathname?.split("/");
+    parts.shift();
 
     if (parts.length === 0) {
         return "/";
@@ -23,5 +24,5 @@ export function getRouteFromUrl(url: URL): string {
         parts.shift();
     }
 
-    return parts.join("/");
+    return "/" + parts.join("/");
 }
