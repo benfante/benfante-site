@@ -1,12 +1,14 @@
 import { useState } from "react";
 import * as m from "@paraglide/messages"
+import { type AvailableLanguageTag, languageTag } from "@libs/paraglide/runtime";
+import { localizePath } from "@libs/i18n";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const manuItems = [
-    { label: m.blog(), path: "/blog" },
-    { label: m.curriculum(), path: "/cv" },
+    { label: m.blog(), path: localizePath("/blog", languageTag()) },
+    { label: m.curriculum(), path: localizePath("/cv", languageTag()) },
   ];
 
   return (

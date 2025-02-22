@@ -4,12 +4,14 @@ import { Image } from "astro:assets";
 import logo from "@assets/logo.svg";
 import ThemeSwitcher from "@components/ThemeSwitcher";
 import LanguageMenu from "./LanguageMenu";
+import { localizePath } from "@libs/i18n";
+import { type AvailableLanguageTag } from "@paraglide/runtime";
 ---
 
 <header
   class="flex items-center justify-between border-b border-gray-400 py-8"
 >
-  <a href="/" class="flex items-center space-x-4 hover:no-underline!">
+  <a href={localizePath("/", Astro.currentLocale as AvailableLanguageTag)} class="flex items-center space-x-4 hover:no-underline!">
     <Image src={logo} width={64} alt="logo" loading="eager" />
     <div class="text-2xl sm:text-4xl font-bold text-[#DD0000FF]">Lucio Benfante</div>
   </a>
