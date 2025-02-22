@@ -23,7 +23,7 @@ const alt = imageDescription || title;
 
 ---
 <div class="flex flex-col items-center p-4">
-    <Image src={images[image]()} alt={alt} height={imageHeight} />
+    <Image src={images[image]()} alt={alt} height={imageHeight} loading={"eager"} />
     <h1>{title}</h1>
     <div class="text-justify">
         <slot />
