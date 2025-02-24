@@ -1,18 +1,31 @@
-<footer class="sticky top-[100vh] flex flex-row flex-wrap items-start justify-between min-h-12 bg-gray-100 text-gray-500 dark:bg-gray-900 dark:text-gray-400 p-4 text-sm">
+---
+import SocialMenu from "./SocialMenu.astro";
+---
+
+<footer
+    class="sticky top-[100vh] flex flex-row flex-wrap items-start justify-between min-h-12 bg-gray-100 text-gray-500 dark:bg-gray-900 dark:text-gray-400 p-4 text-sm"
+>
     <div class="flex flex-col mb-1">
-        <div class="text-base mb-1">&copy; 2025 Lucio Benfante. All rights reserved.</div>
+        <div class="text-base mb-1">
+            &copy; 2025 Lucio Benfante. All rights reserved.
+        </div>
         <div>P. IVA: 02833950237</div>
+    </div>
+    <div>
+        <SocialMenu />
     </div>
     <div class="flex flex-col">
         <div>
-            Benfante Lucio<br/>
-            via Fratelli Cervi, 20<br/>
-            37047 San Bonifacio (VR)<br/>
+            Benfante Lucio<br />
+            via Fratelli Cervi, 20<br />
+            37047 San Bonifacio (VR)<br />
             Italy
         </div>
         <div class="mt-1">
-            <span class="font-bold">Tel:</span> <a href="tel:+393356507871">+39 335 6507871</a><br/>
-            <span class="font-bold">Email:</span> <a href="mailto:lucio@benfante.com">lucio@benfante.com</a>
+            <span class="font-bold">Tel:</span>
+            <a href="tel:+393356507871">+39 335 6507871</a><br />
+            <span class="font-bold">Email:</span>
+            <a href="mailto:lucio@benfante.com">lucio@benfante.com</a>
         </div>
     </div>
 </footer>
