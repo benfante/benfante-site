@@ -2,6 +2,6 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"blog": "Blog",
 	"curriculum": "Curriculum",
-    "it_lang": "Italiano",
-    "en_lang": "Inglese"
+	"it_lang": "Italiano",
+	"en_lang": "English"
 }

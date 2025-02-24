@@ -1,5 +1,7 @@
 {
-  "$schema": "https://inlang.com/schema/inlang-message-format",
-  "blog": "Blog",
-  "curriculum": "Resume"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"blog": "Blog",
+	"curriculum": "Resume",
+	"it_lang": "Italiano",
+	"en_lang": "English"
 }
