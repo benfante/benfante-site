@@ -1,0 +1,2472 @@
+{
+    "Candidate": {
+        "CandidateSupplier": [
+            {
+                "hr:PartyID": [
+                    {
+                        "$": {
+                            "schemeID": "Test-0001",
+                            "schemeName": "PartyID",
+                            "schemeAgencyName": "EUROPASS",
+                            "schemeVersionID": "1.0"
+                        }
+                    }
+                ],
+                "hr:PartyName": ["Owner"],
+                "PersonContact": [
+                    {
+                        "PersonName": [
+                            {
+                                "oa:GivenName": ["Lucio"],
+                                "hr:FamilyName": ["Benfante"]
+                            }
+                        ],
+                        "Communication": [
+                            {
+                                "ChannelCode": ["Email"],
+                                "oa:URI": ["lucio@benfante.com"]
+                            }
+                        ]
+                    }
+                ],
+                "hr:PrecedenceCode": ["1"]
+            }
+        ],
+        "CandidatePerson": [
+            {
+                "PersonName": [
+                    { "oa:GivenName": ["Lucio"], "hr:FamilyName": ["Benfante"] }
+                ],
+                "Communication": [
+                    {
+                        "ChannelCode": ["Email"],
+                        "oa:URI": ["lucio@benfante.com"]
+                    },
+                    { "ChannelCode": ["Web"], "oa:URI": ["www.benfante.com"] },
+                    {
+                        "ChannelCode": ["Social Media"],
+                        "UseCode": ["twitter"],
+                        "oa:URI": ["https://x.com/luciobenfante"]
+                    },
+                    {
+                        "ChannelCode": ["Social Media"],
+                        "UseCode": ["other"],
+                        "OtherTitle": ["Bluesky"],
+                        "oa:URI": [
+                            "https://bsky.app/profile/luciobenfante.bsky.social"
+                        ]
+                    },
+                    {
+                        "ChannelCode": ["Social Media"],
+                        "UseCode": ["linkedin"],
+                        "oa:URI": ["https://www.linkedin.com/in/benfante/"]
+                    }
+                ],
+                "NationalityCode": ["it"],
+                "hr:BirthDate": ["1971-03-25"],
+                "PrimaryLanguageCode": [
+                    { "_": "ita", "$": { "name": "NORMAL" } }
+                ]
+            }
+        ],
+        "CandidateProfile": [
+            {
+                "$": { "languageCode": "it" },
+                "hr:ID": [
+                    {
+                        "$": {
+                            "schemeID": "Test-0001",
+                            "schemeName": "CandidateProfileID",
+                            "schemeAgencyName": "EUROPASS",
+                            "schemeVersionID": "1.0"
+                        }
+                    }
+                ],
+                "EmploymentHistory": [
+                    {
+                        "EmployerHistory": [
+                            {
+                                "hr:OrganizationName": [
+                                    "CRESCENDO Digital Transformation S.r.l. "
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": ["Roma"],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2023-03"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["true"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Formazione sui seguenti argomenti: HTML, CSS, JavaScript, TypeScript, Angular.</p>"
+                                        ],
+                                        "City": ["Roma"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["D2P Solution S.R.L."],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": ["Roma"],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Insegnante nei corsi di qualificazione professionale",
+                                                "$": {
+                                                    "typeCode": "URI",
+                                                    "languageID": "http://data.europa.eu/esco/occupation/81f8d141-3f67-4fb0-a349-db0147ef7b3a"
+                                                }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2023-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["true"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Formazione sui seguenti argomenti: SQL, Java, JDBC, JPA/Hibernate, Java EE, Servlets, Spring Framework, Spring MVC, Maven, HTML, CSS, JavaScript, Angular, Git, Test Driven Development, Microservizi.</p>"
+                                        ],
+                                        "City": ["Roma"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Digital Thinks S.r.l."
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Sesto San Giovanni (MI)"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2021-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["true"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Formazione sui seguenti argomenti: SQL, Java, JDBC, JPA/Hibernate, Java EE, Servlets, Spring Framework, Spring MVC, Maven, HTML, CSS, JavaScript, React, Angular, Git, Test Driven Development.</p>"
+                                        ],
+                                        "City": ["Sesto San Giovanni (MI)"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "OverNet Solutions S.r.l."
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    { "CountryCode": ["it"] }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2017-09"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["true"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Formazione sui seguenti argomenti: SQL, Java, JDBC, JPA/Hibernate, Java EE, Servlets, Spring Framework, Spring MVC, Maven, HTML, CSS, JavaScript, Angular, Git, Test Driven Development, PostgreSQL.</p>"
+                                        ],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Fondazione ITS Meccatronico"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Vicenza"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2020-10"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2024-06"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Argomento \"Architetture dei sistemi informatici\" del modulo \"UF 9-Architetture e reti infomatiche industriali\" del corso \"Tecnico superiore digitalizzazione sistemi prod.ne ind.le - VI 4.0\".</p>"
+                                        ],
+                                        "City": ["Vicenza"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Information Management Systems Group del Dipartimento di Ingegneria dell'Informazione dell'Universi"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2002"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2017"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Sviluppo di Ipsa (Imaginum Patavinae Scientiae Archivum), un'applicazione per l'archiviazione e l'annotazione di immagini digitalizzate da manoscritti miniati. Ipsa è un'applicazione Web-based, sviluppata in Java. Le principali tecnologie utilizzate sono Servlet, JSP, JSTL, JAI (Java Advanced Imaging) e JDBC, successivamente aggiornato con JPA/Hibernate e Spring MVC. Le annotazioni e le immagini vengono memorizzate in un database relazionale (PostgreSQL). Una descrizione più estesa del progetto è disponibile all'indirizzo http://ipsa.ipsa-project.org. Parte del lavoro è stata svolta nell'ambito del progetto europeo di ricerca CULTURA (http://cultura-project.eu/).</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Ifoa"],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2017-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2017-03"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Formazione sui seguenti argomenti: SQL, Java, JDBC, Java EE, Servlets, Spring Framework, Spring MVC, Maven.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Safety Space Technologies di Paolo Bari"
+                                ],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2013"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2016"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Progettazione, realizzazione e manutenzione del sito SST Firestop. Il sito è stato realizzato utilizzando Drupal 7.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Facoltà di Lettere e Filosofia dell’Università di Padova"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    { "CountryCode": ["it"] }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2008"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2016"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Sviluppo di un software web-based per lo svolgimento di prove di accertamento dell'abilità informatica, e degli esami degli insegnamenti della Facoltà. Tutto il software è stato rilasciato con licenza open-source e compone il progetto Minimark (www.minimark.org).</p>"
+                                        ],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Club Alpino Italiano (C.A.I.)"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Milano"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2011-05"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2016-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Progettazione del software della nuova infrastruttura informatica del C.A.I e sviluppo di alcuni suoi moduli. In particolare si è implementato il sistema di Single Sign-On, che verrà utilizzato da tutte le applicazioni C.A.I., l'applicazione di amministrazione degli utenti e delle loro autorizzazioni, la gestione delle attività delle sezioni CAI e delle relativa assicurazione, l'interfacciamento con il sistema di contabilità utilizzato dalla Sede Centrale CAI.</p>"
+                                        ],
+                                        "City": ["Milano"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["PiùChePuoi"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente/Produttore di contenuti",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2013"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2015"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Docente per video-corsi sul linguaggio Java e le relative tecnologie. Il primo corso (Java, il corso fondamentale) è disponibile online all'indirizzo https://www.corsi.it/corso/java-il-corso-fondamentale.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Valente Pali Precompressi S.r.l."
+                                ],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Consulente per lo sviluppo",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2007-11"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2013"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Sviluppo e manutenzione del portale aziendale della ditta. Il portale è stato sviluppato usanto il prodotto opensource LifeRay. All'interno del portale è stato inoltre sviluppato e integrato il sistema di produzione dei preventivi e delle proposte d'ordine.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "2° Circolo Didattico di San Bonifacio"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "San Bonifacio"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2011"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Progettazione, realizzazione e manutenzione del sito Web del 2° Circolo Didattico di San Bonifacio (VR).</p>"
+                                        ],
+                                        "City": ["San Bonifacio"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Kairòs S.p.A."],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2011-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2011-10"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di un corsi nell'ambito del progetto FSE \"Java &amp; Mobile Developer\" Cod. 1348/1/2/2033/2010. In particolare i moduli erogati sono stati quello \"Java avanzato\" e \"Java Enterprise\".</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Lynx S.p.A."],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Consulente per lo sviluppo J2EE",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2008-10"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2010"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Coordinamento e sviluppo di progetti Web-based. Le principali tecnologie utilizzate sono Spring, Spring MVC, Hibernate, DWR, Parancoe (www.parancoe.org), Oracle 10g.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Lynx S.p.A."],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2010-04"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2010-06"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di un corso di tre giorni sull'utilizzo, la personalizzazione e l'utilizzo tramite servizi Web della piattaforma di Enterprise Content Management (ECM) Alfresco (www.alfresco.com).</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Istituto Tecnico Industriale \"FRANCESCO SEVERI\""
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Tutor per progetto di formazione",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2010-01"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2010-06"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Consulenza e assistenza a tre studenti selezionati di scuola media superiore nell'ambito del progetto FSE \"TEKNE - Azioni di ricerca e approfondimenti disciplinari negli Istituti Secondari Superiori\". In tale attività si sono istruiti gli studenti nelle tecnologie Java, Parancoe, Spring e Hibernate/JPA, e li si è guidati nello sviluppo del progetto open-source Ternion (https://code.google.com/archive/p/ternion/).</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Università degli Studi di Padova - Dipartimento di Ingegneria dell'Informazione"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2007"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2009"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Realizzazione delle componenti di base di un'architettura di Information Retrieval P2P nell'ambito del progetto di ricerca SAPIR FP6-IST-045128 \"Search on Audiovisual content using Peer-to-peer Information Retrieval\".</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Facoltà di Lettere e Filosofia dell’Università di Padova"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente universitario a contratto",
+                                                "$": {
+                                                    "typeCode": "URI",
+                                                    "languageID": "http://data.europa.eu/esco/occupation/c262bb96-03bb-4c97-a45b-0cf36db5b048"
+                                                }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1998"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2009"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione come professore a contratto per l’insegnamento di \"Informatica Generale\" dei Corsi di Laurea in Discipline della mediazione linguistica e culturale e in Lingue, letterature e culture moderne. Precedentemente, dal 1999 al 2002, si era svolto lo stesso incarico per il corso di Laurea in Scienze della Comunicazione, prima come assistente e successivamente come professore a contratto.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "SIPA S.r.l. (Gruppo Zoppas-Industries)"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Timisoara"
+                                                        ],
+                                                        "CountryCode": ["ro"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2007-02"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2007-03"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di un corso di tre giorni a Timisoara (Romania). Il corso si proponeva di esporre una panoramica sulle principali tecnologie Java utilizzabili per sviluppare applicazioni Web nel contesto del processo di sviluppo del committente. Le tecnologie esaminate sono state: Maven 2, NetBeans 5.5, JEE 5, JPA, Hibernate 3, SpringFramework, Java Server Faces (JSF), Spring MVC, DWR. Inoltre sono stati esaminati i principali servizi e funzionalità offerti dal framework Parancoe.</p>"
+                                        ],
+                                        "City": ["Timisoara"],
+                                        "Country": ["ro"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Lynx S.p.A."],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Consulente per lo sviluppo J2EE",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2006-10"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2007-02"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Coordinamento e sviluppo di progetti in ambito bancario. Le principali tecnologie utilizzate EJB 2.1, Eclipse RCP, XML/XSLT.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Facoltà di Scienze MM.FF.NN. dell'Università di Padova"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente universitario a contratto",
+                                                "$": {
+                                                    "typeCode": "URI",
+                                                    "languageID": "http://data.europa.eu/esco/occupation/c262bb96-03bb-4c97-a45b-0cf36db5b048"
+                                                }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2004"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2006"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione come professore a contratto per l’insegnamento di \"Programmazione 1\" del Corso di Laurea triennale in Matematica. L'argomento principale del corso è la programmazione con il linguaggio C.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Tactical People S.r.l."
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Consulente per lo sviluppo J2EE",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2004-12"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2006-11"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Coordinamento di un gruppo di lavoro e sviluppo di funzionalità per un'applicazione in ambiente Web nell'ambito della grande distribuzione. Le principali tecnologie utilizzate sono state DBMS Oracle, Hibernate.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Coop. DIEFFE a r.l."],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2005-12"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2006-03"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di corsi nell'ambito di un “Master Regionale in Programmazione Object Oriented”. Le tematiche sviluppate sono state: la programmazione Java, il linguaggio XML, le Java Web Application, i framework Web (JSF), i framework di persistenza (Hibernate).</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Lynx S.p.A."],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Consulente per lo sviluppo J2EE",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2003"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2005"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Sviluppo di applicazioni Web. Le principali tecnologie utilizzate sono state DBMS DB2, XML/XSLT, FOP, JSTL</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["AGFOL"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2003"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2005"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Docente per la parte riguardante il linguaggio Java e la programmazione distribuita del Master per Laureati e Laureandi \"Esperto in Informatica Industriale\". Il master si è svolto nella sede di Vicenza.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "NIS – Sun Microsystems"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Milano"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2005"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di corsi riguardanti le tecnologie Java per conto di Sun Microsystems (www.sun.it). I corsi erogati sono stati: SL-255 (Java Programming Language for Visual Basic Programmers), SL- 265 (Java Technology for Structured Programmers), SL-275 (Java Programming Language), SL-285 (Java Programming Language Workshop), SL-314 (Web Component Development with Java Technology), OO-226 (Object-Oriented Application Analysis and Design for Java Technology (UML)).</p>"
+                                        ],
+                                        "City": ["Milano"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Elea (Gruppo De Agostini)"
+                                ],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2002"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2003"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Erogazione di corsi su Java, UML e le Tecnologie Orientate agli Oggetti.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Information Management Systems Group del Dipartimento di Ingegneria dell'Informazione dell'Universi"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Sviluppatore di software",
+                                                "$": {
+                                                    "typeCode": "URI",
+                                                    "languageID": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1"
+                                                }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2002"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione con il Dipartimento di Elettronica ed Informatica dell'Università di Padova e la ditta Extracomm Technologies Inc. per lo sviluppo di un software di Information Retrieval a supporto di un call center.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Osservatorio Astronomico di Padova"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Progettista/Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1997"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2002"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Sviluppo del sistema di consultazione del catalogo GSCII (Guide Star Catalogue II). Nell'ambito di tale attività si è svolta la funzione di progettista del database che contiene il catalogo e di progettista/sviluppatore della parte server dell’applicazione Web, costituita da un insieme di Java Servlet. Le Servlet interrogano il database mediante JDBC e sfruttano alcuni servizi disponibili come oggetti CORBA. Il sistema di gestione di database utilizzato è l'Informix Dynamic Server 2000, un sistema object-relational che permette la gestione di dati complessi, quali le coordinate astronomiche, e la creazione di indici multidimensionali. La principale interfaccia utente del sistema di consultazione è costituita da una Applet Java.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Consorzio Padova Ricerche"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2001"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione con il Consorzio Padova Ricerche per l'erogazione di un corso professionale sullo sviluppo con metodologie Object-Oriented e la programmazione mediante il linguaggio C/C++. Il corso è stato svolto presso le sedi del Consorzio Padova Ricerche.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Università di Padova"],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Vicenza"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Assistente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1997"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2001"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione come assistente per l'insegnamento di Fondamenti di Informatica del Diploma di Ingegneria Elettronica dell'Università di Padova. L'attività di laboratorio prevedeva esercitazioni al computer con i linguaggi C/C++ e Java. Il corso è stato svolto nella sede di Vicenza.</p>"
+                                        ],
+                                        "City": ["Vicenza"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["HTML.it"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Produttore contenuti",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1999"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Scrittura di un corso on-line (http://database.html.it/guide/leggi/40/guida-linguaggio-sql/) riguardante il linguaggio SQL.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Università di Padova"],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "hr:IndustryCode": ["P"],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Assistente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1998"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2000"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Collaborazione come assistente per il laboratorio dell'insegnamento di \"Fondamenti di Informatica\" della Facoltà di Psicologia dell'Università di Padova. L'attività di laboratorio prevedeva esercitazioni al computer con il linguaggio C/C++ e con il programma MS Access.</p>"
+                                        ],
+                                        "City": ["Padova"],
+                                        "Country": ["it"]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Information Management Systems Group del Dipartimento di Ingegneria dell'Informazione dell'Universi"
+                                ],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Sviluppatore",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1996"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1999"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Progetto \"Semantic Network Inter-Operations\". I partner del progetto furono l'European Space Agency (ESA), la ditta Vitrociset di Roma ed il Consorzio Padova Ricerche dell'Università di Padova.</p>"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Consorzio Padova Ricerche"
+                                ],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "PositionHistory": [
+                                    {
+                                        "PositionTitle": [
+                                            {
+                                                "_": "Docente",
+                                                "$": { "typeCode": "FREETEXT" }
+                                            }
+                                        ],
+                                        "eures:EmploymentPeriod": [
+                                            {
+                                                "eures:StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1998"
+                                                        ]
+                                                    }
+                                                ],
+                                                "eures:EndDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "1999"
+                                                        ]
+                                                    }
+                                                ],
+                                                "hr:CurrentIndicator": ["false"]
+                                            }
+                                        ],
+                                        "oa:Description": [
+                                            "<p>Corsi di formazione per conto del Consorzio Padova Ricerche presso la ditta OSRAM di Treviso. Gli argomenti dei corsi sono stati il sistema operativo Unix e il linguaggio di programmazione C.</p>"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "EducationHistory": [
+                    {
+                        "EducationOrganizationAttendance": [
+                            {
+                                "hr:OrganizationName": [
+                                    "Università degli Studi di Padova"
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Padova"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "ChannelCode": ["Web"],
+                                                "oa:URI": ["www.unipd.it"]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["1996"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Laurea in Scienze Statistiche Economiche"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": [
+                                    "Liceo Scientifico Statale \"A.M. Roveggio\""
+                                ],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            {
+                                                "Address": [
+                                                    {
+                                                        "oa:CityName": [
+                                                            "Cologna Veneta (VR)"
+                                                        ],
+                                                        "CountryCode": ["it"]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["1989"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Diploma in Maturità Scientifica"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Sun Microsystems"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["2001"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Corso Professionale in OO-226 - \"Analisi e progettazione di applicazioni O.O. con UML\""
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Sun Microsystems"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["2005"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Corso Professionale in Aspect Oriented Programming (AOP) con AspectJ e Java Server Faces (JSF)"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Sun Microsystems"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["2002"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Certificazione in IT-310-035 - Sun Certified Programmer for Java 2 Platform 1.4 (SCJP)"
+                                        ],
+                                        "FinalGrade": [
+                                            { "hr:ScoreText": ["93%"] }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["Sun Microsystems"],
+                                "OrganizationContact": [
+                                    { "Communication": [{ "Address": [""] }] }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "EndDate": [
+                                            { "hr:FormattedDateTime": ["2008"] }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "Certificazione in Sun Certified Specialist for NetBeans IDE"
+                                        ],
+                                        "FinalGrade": [
+                                            { "hr:ScoreText": ["86%"] }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "hr:OrganizationName": ["EnterpriseDB"],
+                                "OrganizationContact": [
+                                    {
+                                        "Communication": [
+                                            { "Address": [""] },
+                                            {
+                                                "ChannelCode": ["Web"],
+                                                "oa:URI": [
+                                                    "https://www.youracclaim.com/org/enterprisedb"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "AttendancePeriod": [
+                                    {
+                                        "StartDate": [
+                                            {
+                                                "hr:FormattedDateTime": [
+                                                    "2020-11-09"
+                                                ]
+                                            }
+                                        ],
+                                        "Ongoing": ["false"]
+                                    }
+                                ],
+                                "EducationDegree": [
+                                    {
+                                        "hr:DegreeName": [
+                                            "EDB Certified Associate - PostgreSQL 10"
+                                        ],
+                                        "FinalGrade": [
+                                            { "hr:ScoreText": ["90%"] }
+                                        ]
+                                    }
+                                ],
+                                "Link": [
+                                    "https://www.youracclaim.com/badges/c387418a-0410-4626-9820-93cd20629cc6/public_url"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "eures:Licenses": [""],
+                "Certifications": [""],
+                "PublicationHistory": [
+                    {
+                        "Publication": [
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>L. Benfante. Un tool per la costruzione automatica di ipertesti per Information Retrieval: la persistenza dei dati. Università di Padova. Facoltà di Scienze Statistiche ed Economiche. 1996. Tesi di Laurea.</p>"
+                                ],
+                                "Title": [
+                                    "Un tool per la costruzione automatica di ipertesti per Information Retrieval: la persistenza dei dati."
+                                ],
+                                "Year": ["1996"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, M. Melucci. \"ACHIRA: Automatic Construction of Hypertexts for Information Retrieval Applications\". Proc. of the 20th Int. ACM-SIGIR Conf. on Research and Development in Information Retrieval. Philadelphia, PA, USA. July 1997. 335. Poster session.</p>"
+                                ],
+                                "Title": [
+                                    "ACHIRA: Automatic Construction of Hypertexts for Information Retrieval Applications"
+                                ],
+                                "Year": ["1997"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, M. Melucci. \"OFAHIR: \"On-the-Fly\" Automatic Authoring of Hypertexts for Information Retrieval\". In S. Spaccapietra, F. Maryansky (Eds), Searching for Semantics: Data Mining, Reverse Engineering. Proc. of the 7th IFIP 2.6 Working Conference on Database Semantics (DS-7). Leysin, Switzerland. October 1997. 129-154.</p>"
+                                ],
+                                "Title": [
+                                    "OFAHIR: \"On-the-Fly\" Automatic Authoring of Hypertexts for Information Retrieval"
+                                ],
+                                "Year": ["1997"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, M. Melucci. \"OFAHIR: \"On-the-Fly\" Automatic Authoring of Hypertexts for Information Retrieval\". In: S. Spaccapietra, F. Maryanski (Eds). Data Mining and Reverse Engineering: Searching for semantics. Chapman &amp; Hall, London. 1998. 269-300.</p>"
+                                ],
+                                "Title": [
+                                    "OFAHIR: \"On-the-Fly\" Automatic Authoring of Hypertexts for Information Retrieval"
+                                ],
+                                "Year": ["1998"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>A. Baruffolo, L. Benacchio, L. Benfante. \"A system for on-line access to GSC II\". Proc. of Astronomical Data Analysis Software and System VIII. Urbana, Illinois, USA. November 1998. Poster session.</p>"
+                                ],
+                                "Title": [
+                                    "A system for on-line access to GSC II"
+                                ],
+                                "Year": ["1998"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, F. Crestani, V. Del Re, M. Lisanti, G. Mazzini, A. Schisano. Study of Semantic Networks Inter-Operations: Final Report. Vitrociset Space Division and Consorzio Padova Ricerche, I. VCS/CPR/FR/1.0. 30 March 1999. 140.</p>"
+                                ],
+                                "Title": [
+                                    "Study of Semantic Networks Inter-Operations: Final Report"
+                                ],
+                                "Year": ["1999"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>L. Benfante, A. Volpato, A. Baruffolo, L. Benacchio. \"The OaPd system for the Web access to large astronomical catalogues\". Proc. of Astronomical Data Analysis Software and System X. Boston, MA, USA. November 2000. Poster session.</p>"
+                                ],
+                                "Title": [
+                                    "The OaPd system for the Web access to large astronomical catalogues"
+                                ],
+                                "Year": ["2000"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, N. Orio. \"A Digital Archive of Herbals for Scientific Research and Dissemination\". Proc. of Annual AICA Workshop. Trento, Italy. 2003. 191-199.</p>"
+                                ],
+                                "Title": [
+                                    "A Digital Archive of Herbals for Scientific Research and Dissemination"
+                                ],
+                                "Year": ["2003"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, N. Orio. \"IPSA: A Digital Archive of Herbals to Support Scientific Research\". Proc. of the International Conference on Asian Digital Libraries, ICADL. Kuala Lumpur, MA. 2003. 253-264.</p>"
+                                ],
+                                "Title": [
+                                    "IPSA: A Digital Archive of Herbals to Support Scientific Research"
+                                ],
+                                "Year": ["2003"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, M. Manfioletti, N. Orio, C. Ponchia. \"Issues to Be Addressed for Transforming a Digital Library Application for Experts into one for Final Users\". M. Ioannides, D. Fritsch, J. Leissner, R. David, F. Remondino, R. Caffo (Eds), Euromed 2012, 4th International Conference, Progress in Cultural Heritage Preservation, Short Papers.. Multi-Science Publishing Co Ltd, Brentwood, UK. 2012. 89-94.</p>"
+                                ],
+                                "Title": [
+                                    "Issues to Be Addressed for Transforming a Digital Library Application for Experts into one for Final Users"
+                                ],
+                                "Year": ["2012"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, N. Orio. \"A Contribution for the Dissemination of Cultural Heritage Content to a Wider Public\". M. Agosti, F. Esposito, S. Ferilli, N. Ferro (Eds), Digital Libraries and Archives. 8th Italian Research Conference, IRCDL 2012, Bari, Italy, February 9-10, 2012, Revised Selected Papers, CCIS Vol. 354. Springer, Berlin Heidelberg, 2013. 2012. 195-206.</p>"
+                                ],
+                                "Title": [
+                                    "A Contribution for the Dissemination of Cultural Heritage Content to a Wider Public"
+                                ],
+                                "Year": ["2013"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            },
+                            {
+                                "hr:FormattedPublicationDescription": [
+                                    "<p>M. Agosti, L. Benfante, M. Manfioletti, N. Orio, C. Ponchia. \"An Evaluation of the Involvement of General Users in a Cultural Heritage Collection\". Proc. of Digital Humanities 2013. Lincoln, USA. 2013. 75-77.</p>"
+                                ],
+                                "Title": [
+                                    "An Evaluation of the Involvement of General Users in a Cultural Heritage Collection"
+                                ],
+                                "Year": ["2013"],
+                                "Reference": [""],
+                                "DOI": [{ "Link": [""] }]
+                            }
+                        ]
+                    }
+                ],
+                "PersonQualifications": [
+                    {
+                        "PersonCompetency": [
+                            {
+                                "CompetencyID": [
+                                    {
+                                        "_": "eng",
+                                        "$": { "schemeName": "NORMAL" }
+                                    }
+                                ],
+                                "hr:TaxonomyID": ["language"],
+                                "eures:CompetencyDimension": [
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Understanding-Listening"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["B1"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Understanding-Reading"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["B1"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Speaking-Interaction"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["B1"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Speaking-Production"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["B1"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Writing-Production"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["B1"] }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "CompetencyID": [
+                                    {
+                                        "_": "fre",
+                                        "$": { "schemeName": "NORMAL" }
+                                    }
+                                ],
+                                "hr:TaxonomyID": ["language"],
+                                "eures:CompetencyDimension": [
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Understanding-Listening"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["A1"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Understanding-Reading"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["A2"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Speaking-Interaction"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["A2"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Speaking-Production"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["A2"] }
+                                        ]
+                                    },
+                                    {
+                                        "hr:CompetencyDimensionTypeCode": [
+                                            "CEF-Writing-Production"
+                                        ],
+                                        "eures:Score": [
+                                            { "hr:ScoreText": ["A1"] }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "EmploymentReferences": [""],
+                "CreativeWorks": [""],
+                "Projects": [""],
+                "SocialAndPoliticalActivities": [""],
+                "CommunicationAndInterpersonalSkills": [""],
+                "DigitalSkills": [
+                    {
+                        "DigitalSkillsGroup": [
+                            {
+                                "Title": ["Linguaggi di Programmazione"],
+                                "DigitalSkill": [
+                                    "Java",
+                                    "Javascript",
+                                    "JSF",
+                                    "C/C++",
+                                    "PHP"
+                                ]
+                            },
+                            {
+                                "Title": ["Tecnologie Java"],
+                                "DigitalSkill": [
+                                    "Hibernate/JPA",
+                                    "Struts",
+                                    "Servlet/JSP",
+                                    "Spring Framework",
+                                    "Spring Boot",
+                                    "Spring MVC"
+                                ]
+                            },
+                            {
+                                "Title": [
+                                    "Sistemi di Gestione di Basi di Dati (DBMS)"
+                                ],
+                                "DigitalSkill": [
+                                    "PostgreSQL",
+                                    "Oracle 9, 10",
+                                    "HSQLDB",
+                                    "MySql",
+                                    "DB2",
+                                    "Informix Dynamic Server"
+                                ]
+                            },
+                            ""
+                        ]
+                    }
+                ],
+                "NetworksAndMemberships": [
+                    {
+                        "NetworkAndMembership": [
+                            {
+                                "Activity": [
+                                    {
+                                        "Title": ["JUG Padova"],
+                                        "Date": [
+                                            {
+                                                "StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2001"
+                                                        ]
+                                                    }
+                                                ],
+                                                "Ongoing": ["true"]
+                                            }
+                                        ],
+                                        "Description": [
+                                            "<p>Un Java User Group (JUG) è una comunità di utenti appassionati del linguaggio di programmazione Java. Questi gruppi di persone sono totalmente indipendenti: ciò che svolgono dipende solo dalle persone che li costituiscono. Lo scopo principale di queste organizzazioni è quello di confrontarsi sulle diverse tecniche di programmazione e imparare tutte le potenzialità del linguaggio. I JUG sono talvolta organizzati in vere e proprie associazioni riconosciute giuridicamente molte delle quali no-profit. Dal 13 Maggio 2005 anche il JUG Padova rientra in questa categoria.</p>"
+                                        ]
+                                    }
+                                ],
+                                "Location": ["Padova"]
+                            },
+                            {
+                                "Activity": [
+                                    {
+                                        "Title": [
+                                            "Sun's Java Champions Program"
+                                        ],
+                                        "Date": [
+                                            {
+                                                "StartDate": [
+                                                    {
+                                                        "hr:FormattedDateTime": [
+                                                            "2006-06"
+                                                        ]
+                                                    }
+                                                ],
+                                                "Ongoing": ["true"]
+                                            }
+                                        ],
+                                        "Description": [
+                                            "<p>Dal sito Java Champions: \"Sun's goal for the Java Champions project is to build a community of representative Java leaders with whom Sun could have conversations with about the state of the Java Platform\". È una comunity in cui si viene ammessi per presentazione ed elezione da parte dei membri stessi.</p>"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ConferencesAndSeminars": [""],
+                "VoluntaryWorks": [""]
+            }
+        ],
+        "RenderingInformation": [
+            {
+                "Design": [
+                    {
+                        "Template": ["Template1"],
+                        "Color": ["Default"],
+                        "FontSize": ["Medium"],
+                        "Logo": ["FirstPage"],
+                        "PageNumbers": ["false"],
+                        "SectionsOrder": [
+                            {
+                                "Section": [
+                                    { "Title": ["work-experience"] },
+                                    { "Title": ["education-training"] },
+                                    { "Title": ["language"] },
+                                    { "Title": ["digital-skills"] },
+                                    { "Title": ["publication"] },
+                                    { "Title": ["membership"] }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ClosingStatement": [
+                    {
+                        "Statement": [
+                            "Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”. "
+                        ],
+                        "Place": ["San Bonifacio"],
+                        "Date": [{ "hr:FormattedDateTime": ["2025-02-13"] }]
+                    }
+                ]
+            }
+        ]
+    }
+}

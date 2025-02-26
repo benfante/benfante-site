@@ -1,7 +1,15 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"blog": "Blog",
-	"curriculum": "Resume",
-	"it_lang": "Italiano",
-	"en_lang": "English"
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "blog": "Blog",
+    "curriculum": "Resume",
+    "it_lang": "Italiano",
+    "en_lang": "English",
+    "curriculumVitae": "Resume",
+    "jobExperience": "Job Experience",
+    "now": "Now",
+    "education": "Education",
+    "finalGrade": "Final Grade",
+    "publications": "Publications",
+    "download": "Download",
+    "lastUpdate": "Last Update"
 }

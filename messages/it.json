@@ -3,5 +3,13 @@
 	"blog": "Blog",
 	"curriculum": "Curriculum",
 	"it_lang": "Italiano",
-	"en_lang": "English"
+	"en_lang": "English",
+	"curriculumVitae": "Curriculum vitae",
+	"jobExperience": "Esperienza lavorativa",
+    "now": "Adesso",
+    "education": "Istruzione e formazione",
+    "finalGrade": "Voto finale",
+    "publications": "Pubblicazioni",
+    "download": "Scarica",
+    "lastUpdate": "Ultimo aggiornamento"
 }

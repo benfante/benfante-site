@@ -1,0 +1,139 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+import * as m from "@paraglide/messages"
+
+import cv  from '@libs/cv/cv.json'
+import { undefined } from 'astro:schema';
+import { Icon } from 'astro-icon/components';
+
+const title = 'Curriculum Vitae';
+const description = 'Il mio cv';
+
+const employmentPeriod = (period: any) => {
+    if (period) {
+        const startDate = period['eures:StartDate']?.[0]['hr:FormattedDateTime'][0];
+        const endDate = period['eures:EndDate']?.[0]['hr:FormattedDateTime'][0]
+        if (period['hr:CurrentIndicator']?.[0] === 'true') {
+            return `${formatDate(startDate)} - <span class="italic">${m.now()}</span>`;
+        }
+        return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    }
+    return "";
+}
+
+const educationPeriod = (period: any) => {
+    if (period) {
+        const startDate = period?.StartDate?.[0]['hr:FormattedDateTime'];
+        const endDate = period?.EndDate?.[0]['hr:FormattedDateTime']
+        if (startDate && endDate) {
+            return `${startDate} - ${endDate}`;
+        }
+        if (startDate) {
+            return `${startDate}`;
+        }
+        if (endDate) {
+            return `${endDate}`;
+        }
+    }
+    return "";
+}
+
+const finalGrade = (degree: any) => {
+    if (degree?.FinalGrade) {
+        return `${m.finalGrade()}: ${degree.FinalGrade[0]['hr:ScoreText']}`;
+    }
+    return "";
+}
+
+const educationLink = (education: any) => {
+    if (education?.Link) {
+        return education?.Link?.[0];
+    }
+    return undefined;
+}
+
+const formatDate = (date: string) => {
+    console.log(date);
+    const parts = date.split('-');
+    console.log(parts);
+    console.log(parts.length);
+    if (parts.length === 1) {
+        return date;
+    }
+    let options: any = { year: 'numeric' };
+    if (parts.length === 2) {
+        options = { year: 'numeric', month: 'long' };
+    }
+    if (parts.length === 3) {
+        options = { year: 'numeric', month: 'long', day: 'numeric' };
+    }
+    const d = new Date(date);    
+    return d.toLocaleString(Astro.currentLocale, options);
+}
+
+---
+
+<Layout title={title} description={description}>
+    <div class="flex flex-wrap justify-between items-center">
+        <h1>{m.curriculumVitae()}</h1>
+        <div class="sticky top-0 flex flex-col items-end">
+            <a href="/docs/cv.pdf" class="flex flex-nowrap items-center" target="_blank" rel="noopener noreferrer"><Icon name="vscode-icons:file-type-pdf2" size={32}/><span>{m.download()}</span></a>
+            <div>{m.lastUpdate()}: {formatDate(cv.Candidate.RenderingInformation[0].ClosingStatement[0].Date[0]['hr:FormattedDateTime'][0])}</div>
+        </div>
+    </div>
+    <div class="flex justify-between sticky top-0 bg-gray-200/90 dark:bg-gray-800/90 p-2">
+        <a href="#job-experience">{m.jobExperience()}</a>
+        <a href="#education">{m.education()}</a>
+        <a href="#publications">{m.publications()}</a>
+    </div>
+    <h2 id="job-experience" class="scroll-mt-10">{m.jobExperience()}</h2>
+    <ul>
+        {cv.Candidate.CandidateProfile[0].EmploymentHistory[0].EmployerHistory.map((job, index) => (
+            <li>
+                <div class="period" set:html={employmentPeriod(job.PositionHistory[0]['eures:EmploymentPeriod']?.[0])}></div>
+                <h3>{job.PositionHistory[0].PositionTitle[0]['_']}<span class="organization"> - {job['hr:OrganizationName']}</span></h3>
+                <div set:html={job.PositionHistory[0]['oa:Description']}></div>
+            </li>
+        ))}
+    </ul>
+    <h2 id="education" class="scroll-mt-10">{m.education()}</h2>
+    <ul>
+        {cv.Candidate.CandidateProfile[0].EducationHistory[0].EducationOrganizationAttendance.map((education, index) => (
+            <li>
+                <div class="period" set:html={educationPeriod(education.AttendancePeriod[0])}></div>
+                <h3>{education.EducationDegree[0]['hr:DegreeName']}<span class="organization"> - {education['hr:OrganizationName'][0]}</span></h3>
+                <div set:html={finalGrade(education.EducationDegree[0])}></div>
+                {educationLink(education) ? <div><a href={educationLink(education)} target="_blank" rel="noopener noreferrer">{educationLink(education)}</a></div> : <div></div>}
+            </li>
+        ))}
+    </ul>
+    <h2 id="publications" class="scroll-mt-10">{m.publications()}</h2>
+    <ul>
+        {cv.Candidate.CandidateProfile[0].PublicationHistory[0].Publication.map((publication, index) => (
+            <li>
+                <div class="period">{publication.Year[0]}</div>
+                <h3>{publication.Title[0]}</h3>
+                <div set:html={publication['hr:FormattedPublicationDescription']}></div>
+            </li>
+        ))}
+    </ul>
+</Layout>
+<style>
+    @reference "../styles/global.css";
+    h2 {
+        @apply text-3xl font-bold border-b-4 border-gray-200 dark:border-gray-600 mt-4;        
+    }
+    h3 {
+        @apply text-2xl font-bold mb-2 border-b-2 border-gray-200 dark:border-gray-600;
+    }
+    h3 > span.organization {
+        @apply font-normal italic;
+    }
+    li {
+        @apply mt-4;
+    }
+    div.period {
+        @apply text-sm;
+    }
+</style>
