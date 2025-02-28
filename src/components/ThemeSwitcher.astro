@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div>
+    <input id="theme-trigger" type="checkbox" class="hidden" />
+    <label
+        for="theme-trigger"
+        class="border border-gray-300 rounded-md p-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
+    >
+        <span class="sr-only">Switch to light / dark theme</span>
+        <Icon
+            name="ic:twotone-dark-mode"
+            size="24"
+            class="dark:hidden inline-block"
+        />
+        <Icon
+            name="ic:twotone-light-mode"
+            size="24"
+            class="hidden dark:inline-block"
+        />
+    </label>
+</div>
+<script>
+    const trigger: HTMLInputElement = document.getElementById(
+        "theme-trigger"
+    ) as HTMLInputElement;
+    trigger.checked =
+        document.documentElement.attributes.getNamedItem("data-theme")
+            ?.value === "dark";
+    trigger.addEventListener("change", toggleTheme);
+
+    function toggleTheme(event: Event) {
+        const currentTheme =
+            document.documentElement.attributes.getNamedItem(
+                "data-theme"
+            )?.value;
+        document.dispatchEvent(
+            new CustomEvent("set-theme", {
+                detail: currentTheme !== "dark" ? "dark" : "light",
+            })
+        );
+    }
+</script>

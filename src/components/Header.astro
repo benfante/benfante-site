@@ -2,7 +2,7 @@
 import Menu from "@components/Menu";
 import { Image } from "astro:assets";
 import logo from "@assets/logo.svg";
-import ThemeSwitcher from "@components/ThemeSwitcher";
+import ThemeSwitcher from "@components/ThemeSwitcher.astro";
 import LanguageMenu from "./LanguageMenu";
 import { localizePath } from "@libs/i18n";
 import { type AvailableLanguageTag } from "@paraglide/runtime";
@@ -19,7 +19,7 @@ import { type AvailableLanguageTag } from "@paraglide/runtime";
     <Menu client:load />
   </nav>
   <div class="flex items-center justify-between min-w-35 px-3">
-    <div class="min-w-10"><ThemeSwitcher client:only="react"/></div>
+    <div class="min-w-10"><ThemeSwitcher /></div>
     <LanguageMenu url={Astro.url} client:load />
   </div>
 </header>

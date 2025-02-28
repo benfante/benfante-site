@@ -14,6 +14,9 @@ importers:
       '@fontsource/permanent-marker':
         specifier: ^5.1.1
         version: 5.1.1
+      '@iconify-json/ic':
+        specifier: ^1.2.2
+        version: 1.2.2
       '@iconify-json/logos':
         specifier: ^1.2.4
         version: 1.2.4
@@ -23,12 +26,6 @@ importers:
       '@inlang/paraglide-astro':
         specifier: ^0.3.5
         version: 0.3.5(astro@5.3.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.6)(typescript@5.7.3))
-      '@nanostores/persistent':
-        specifier: ^0.10.2
-        version: 0.10.2(nanostores@0.11.4)
-      '@nanostores/react':
-        specifier: ^0.8.4
-        version: 0.8.4(nanostores@0.11.4)(react@19.0.0)
       '@tailwindcss/vite':
         specifier: ^4.0.6
         version: 4.0.6(vite@6.1.0(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1))
@@ -44,9 +41,6 @@ importers:
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
-      nanostores:
-        specifier: ^0.11.4
-        version: 0.11.4
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -60,6 +54,12 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.16(tailwindcss@4.0.6)
+      astro-themes:
+        specifier: ^0.2.5
+        version: 0.2.5(astro@5.3.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.6)(typescript@5.7.3))
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
 
 packages:
 
@@ -334,6 +334,9 @@ packages:
   '@fontsource/permanent-marker@5.1.1':
     resolution: {integrity: sha512-ccJhQs9cuTpCSTIEgc5LVOgPghkoDrW3WzPoFgDp8c+tuPFpIrAOpXy/OvukUk7t60LnabF+jW9TFA0b2q3u6A==}
 
+  '@iconify-json/ic@1.2.2':
+    resolution: {integrity: sha512-QmjwS3lYiOmVWgTCEOTFyGODaR/+689+ajep/VsrCcsUN0Gdle5PmIcibDsdmRyrOsW/E77G41UUijdbjQUofw==}
+
   '@iconify-json/logos@1.2.4':
     resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
 
@@ -555,19 +558,6 @@ packages:
 
   '@lix-js/fs@2.2.0':
     resolution: {integrity: sha512-B9X3FjD8WmdG7tbA44JuniSO0KdKBWnjfxl8zpgrDCkavrp/GP7U0xxBkc0WgeeoHjQ/pkqq9VqtWB2kS9jIUg==}
-
-  '@nanostores/persistent@0.10.2':
-    resolution: {integrity: sha512-BEndnLhRC+yP7gXTESepBbSj8XNl8OXK9hu4xAgKC7MWJHKXnEqJMqY47LUyHxK6vYgFnisyHmqq+vq8AUFyIg==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      nanostores: ^0.9.0 || ^0.10.0 || ^0.11.0
-
-  '@nanostores/react@0.8.4':
-    resolution: {integrity: sha512-EciHSzDXg7GmGODjegGG1VldPEinbAK+12/Uz5+MAdHmxf082Rl6eXqKFxAAu4pZAcr5dNTpv6wMfEe7XacjkQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      nanostores: ^0.9.0 || ^0.10.0 || ^0.11.0
-      react: '>=18.0.0'
 
   '@octokit/app@14.1.0':
     resolution: {integrity: sha512-g3uEsGOQCBl1+W1rgfwoRFUIR6PtvB2T1E4RpygeUU5LrLvlOqcxrt5lfykIeRpUPpupreGJUYl70fqMDXdTpw==}
@@ -1024,6 +1014,11 @@ packages:
 
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
+
+  astro-themes@0.2.5:
+    resolution: {integrity: sha512-aJGSKlgS1ggXZXARsusd1IzUpJ3ohSgSn2rYYtNG4s+by/w5Sctg9YI1yE1Ny+oDKalWKGLVKICygaLqVf9JBQ==}
+    peerDependencies:
+      astro: '*'
 
   astro@5.3.1:
     resolution: {integrity: sha512-dfcuWKkGsYI6XH6zhSK4tHGFXRgEbPZZwZQ/VmGtKBnDfFW+3faq6k+ETKlKDeRB4LwDGtaeoH+US4HYC5w1SA==}
@@ -1987,10 +1982,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanostores@0.11.4:
-    resolution: {integrity: sha512-k1oiVNN4hDK8NcNERSZLQiMfRzEGtfnvZvdBvey3SQbgn8Dcrk0h1I6vpxApjb10PFUflZrgJ2WEZyJQ+5v7YQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-
   neotraverse@0.6.18:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
@@ -2895,6 +2886,10 @@ snapshots:
 
   '@fontsource/permanent-marker@5.1.1': {}
 
+  '@iconify-json/ic@1.2.2':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/logos@1.2.4':
     dependencies:
       '@iconify/types': 2.0.0
@@ -3240,15 +3235,6 @@ snapshots:
   '@lix-js/fs@2.2.0':
     dependencies:
       typescript: 5.2.2
-
-  '@nanostores/persistent@0.10.2(nanostores@0.11.4)':
-    dependencies:
-      nanostores: 0.11.4
-
-  '@nanostores/react@0.8.4(nanostores@0.11.4)(react@19.0.0)':
-    dependencies:
-      nanostores: 0.11.4
-      react: 19.0.0
 
   '@octokit/app@14.1.0':
     dependencies:
@@ -3721,6 +3707,10 @@ snapshots:
       - debug
       - supports-color
 
+  astro-themes@0.2.5(astro@5.3.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.6)(typescript@5.7.3)):
+    dependencies:
+      astro: 5.3.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.6)(typescript@5.7.3)
+
   astro@5.3.1(@types/node@22.13.4)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.34.6)(typescript@5.7.3):
     dependencies:
       '@astrojs/compiler': 2.10.4
@@ -3941,22 +3931,18 @@ snapshots:
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
-    optional: true
 
-  color-name@1.1.4:
-    optional: true
+  color-name@1.1.4: {}
 
   color-string@1.9.1:
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
-    optional: true
 
   color@4.2.3:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
-    optional: true
 
   combined-stream@1.0.8:
     dependencies:
@@ -4048,8 +4034,7 @@ snapshots:
 
   detect-libc@1.0.3: {}
 
-  detect-libc@2.0.3:
-    optional: true
+  detect-libc@2.0.3: {}
 
   deterministic-object-hash@2.0.2:
     dependencies:
@@ -4415,8 +4400,7 @@ snapshots:
 
   iron-webcrypto@1.2.1: {}
 
-  is-arrayish@0.3.2:
-    optional: true
+  is-arrayish@0.3.2: {}
 
   is-binary-path@2.1.0:
     dependencies:
@@ -4953,8 +4937,6 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  nanostores@0.11.4: {}
-
   neotraverse@0.6.18: {}
 
   nlcst-to-string@4.0.0:
@@ -5302,7 +5284,6 @@ snapshots:
       '@img/sharp-wasm32': 0.33.5
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
-    optional: true
 
   shiki@1.29.2:
     dependencies:
@@ -5318,7 +5299,6 @@ snapshots:
   simple-swizzle@0.2.2:
     dependencies:
       is-arrayish: 0.3.2
-    optional: true
 
   sisteransi@1.0.5: {}
 

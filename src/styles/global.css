@@ -7,7 +7,8 @@
 }
 
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @layer base {
   :root {
@@ -15,7 +16,7 @@
     --theme-color-background: hsl(0 0% 99%);
   }
 
-  .dark {
+  [data-theme=dark] {
     --theme-color-foreground: hsl(0 0% 95%);
     --theme-color-background: hsl(0 0% 3.9%);
   }
@@ -34,6 +35,6 @@ a {
   @apply text-blue-800 dark:text-blue-200 hover:text-red-600 hover:underline font-medium;
 }
 
-.dark [data-icon="logos:x"] {
+[data-theme=dark] [data-icon="logos:x"], [data-theme=dark] [data-icon="logos:github-icon"] {
     @apply bg-gray-300;
 }

@@ -28,10 +28,10 @@ const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url }) => {
 
     return (
         <>
-            <div className=" relative inline-block text-left dropdown">
+            <div className="relative inline-block text-left dropdown">
                 <span>
                     <button
-                        className="inline-flex justify-center w-full px-2 py-2 font-medium leading-5 transition duration-150 ease-in-out border border-gray-300 rounded-md hover:text-gray-500"
+                        className="inline-flex justify-center w-full px-2 py-2 font-medium leading-5 transition duration-150 ease-in-out border border-gray-300 rounded-md hover:text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer"
                         type="button"
                         aria-haspopup="true"
                         aria-expanded="true"
