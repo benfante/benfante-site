@@ -10,21 +10,26 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  i18n: {
-    locales: ["it", "en"],
-    defaultLocale: "it",
-    fallback: {
-      en: "it",
+    site: "http://www.benfante.com",
+    i18n: {
+        locales: ["it", "en"],
+        defaultLocale: "it",
+        fallback: {
+            en: "it",
+        },
+        routing: {
+            fallbackType: "rewrite",
+        },
     },
-    routing: {
-      fallbackType: "rewrite",
+    vite: {
+        plugins: [tailwindcss()],
     },
-  },
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  integrations: [react(), paraglide({
-    project: "./project.inlang",
-    outdir: "./src/libs/paraglide",
-  }), icon()],
+    integrations: [
+        react(),
+        paraglide({
+            project: "./project.inlang",
+            outdir: "./src/libs/paraglide",
+        }),
+        icon(),
+    ],
 });
