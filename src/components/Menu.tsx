@@ -7,8 +7,9 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const manuItems = [
-    { label: m.blog(), path: localizePath("/blog", languageTag()) },
-    { label: m.curriculum(), path: localizePath("/cv", languageTag()) },
+//    { label: m.blog(), path: localizePath("/blog", languageTag()) },
+    { label: m.blog(), path: "https://benfante.blogspot.com", external: true },
+    { label: m.curriculum(), path: localizePath("/cv", languageTag()), external: false },
   ];
 
   return (
@@ -55,7 +56,7 @@ export default function Menu() {
       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
         {manuItems.map((item) => (
           <li key={item.label}>
-            <a href={item.path}>{item.label}</a>
+            <a href={item.path}  {...(item.external ? {target: "_blank", rel:"noopener noreferrer"} : {})}>{item.label}</a>
           </li>
         ))}
       </ul>
