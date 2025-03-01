@@ -8,6 +8,8 @@ import paraglide from "@inlang/paraglide-astro";
 
 import icon from "astro-icon";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
     site: "http://www.benfante.com",
@@ -31,5 +33,14 @@ export default defineConfig({
             outdir: "./src/libs/paraglide",
         }),
         icon(),
+        sitemap({
+            i18n: {
+                defaultLocale: "it",
+                locales: {
+                    it: "it-IT",
+                    en: "en-US",
+                },
+            },
+        }),
     ],
 });
