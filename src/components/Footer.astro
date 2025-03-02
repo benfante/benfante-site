@@ -3,7 +3,7 @@ import SocialMenu from "./SocialMenu.astro";
 ---
 
 <footer
-    class="sticky top-[100vh] flex flex-row flex-wrap items-start justify-between min-h-12 bg-gray-100 text-gray-500 dark:bg-gray-900 dark:text-gray-400 p-4 text-sm"
+    class="sticky top-[100vh] flex flex-row flex-wrap items-stretch justify-between min-h-12 bg-gray-100 text-gray-500 dark:bg-gray-900 dark:text-gray-400 p-4 text-sm"
 >
     <div class="flex flex-col mb-1">
         <div class="text-base mb-1">
@@ -11,8 +11,31 @@ import SocialMenu from "./SocialMenu.astro";
         </div>
         <div>P. IVA: 02833950237</div>
     </div>
-    <div>
+    <div class="flex flex-col items-center justify-between">
         <SocialMenu />
+        <div class="flex flex-wrap gap-4 justify-center items-center">
+            <a
+                href="https://astro.build"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                    src="https://astro.badg.es/v2/built-with-astro/tiny.svg"
+                    alt="Built with Astro"
+                    width="120"
+                    height="20"
+                    loading="lazy"
+                    class="inline"
+                /></a
+            >
+            <a
+                href="https://github.com/benfante/benfante-site"
+                class="hover:text-white underline underline-offset-4"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Source code on GitHub</a
+            >
+        </div>
     </div>
     <div class="flex flex-col">
         <div>
