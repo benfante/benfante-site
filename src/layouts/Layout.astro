@@ -14,10 +14,10 @@ const {
     description = "Pagina personale di Lucio Benfante, sviluppatore software e docente",
 }: Props = Astro.props;
 
-const { href, pathname, hostname } = Astro.url;
+const { href, pathname, hostname, origin } = Astro.url;
 
 const ogImagePath = (pathname: string) => {
-    return `${Astro.url.origin}/og-image${Astro.url.pathname.replace(/index\.html$/, "").replace(/\/$/, "")}/og-image.png`;
+    return `${origin}/og-image${Astro.url.pathname.replace(/index\.html$/, "").replace(/\/$/, "")}/og-image.png`;
 };
 
 import "@styles/global.css";
@@ -50,7 +50,7 @@ import "@styles/global.css";
             content={description}
         />
         <meta property="og:image" content={ogImagePath(pathname)} />
-        <meta property="og:logo" content="/logo.svg" />
+        <meta property="og:logo" content={`${origin}/logo.svg`} />
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
