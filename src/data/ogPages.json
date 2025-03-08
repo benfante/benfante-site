@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Sito personale",
+        "description": "Home page del sito personale di Lucio Benfante",
+        "slug": "/"
+    },
+    {
+        "title": "Personal site",
+        "description": "Home page of the personal site of Lucio Benfante",
+        "slug": "/en/"
+    },
+    {
+        "title": "Curriculum Vitae",
+        "description": "Curriculum Vitae di Lucio Benfante",
+        "slug": "/cv"
+    },
+    {
+        "title": "Resume",
+        "description": "Lucio Benfante's resume",
+        "slug": "/en/cv"
+    }
+]
