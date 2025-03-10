@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "extract-cv:pdf-to-xml": "tsx scripts/extract-pdf-attachment.ts public/docs/cv.pdf attachment.xml src/libs/cv/cv.xml",
+    "extract-cv:xml-to-json": "convert-xml-to-json src/libs/cv/cv.xml src/libs/cv/cv.json",
+    "extract-cv": "npm run extract-cv:pdf-to-xml && npm run extract-cv:xml-to-json"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
@@ -29,7 +32,10 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "astro-themes": "^0.2.5",
+    "convert-xml-to-json": "^1.0.3",
+    "pdf-lib": "^1.17.1",
     "satori": "^0.12.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.3"
   }
 }
