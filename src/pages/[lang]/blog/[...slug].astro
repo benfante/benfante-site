@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from "astro:content";
+import BlogPost from "@layouts/BlogPost.astro";
+
+import { languageFromPath, removeLanguageFromPath } from "@libs/i18n";
+
+import * as m from "@paraglide/messages";
+
+import {
+    availableLanguageTags,
+    type AvailableLanguageTag,
+    languageTag,
+    sourceLanguageTag,
+} from "@paraglide/runtime.js";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    return posts.map((post) => {
+        const lang = languageFromPath(post.id);
+        return {
+            params: { lang, slug: removeLanguageFromPath(post.id) },
+            props: { post },
+        };
+    });
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+---
+
+<BlogPost
+    title={post.data.title}
+    description={post.data.description}
+    pubDate={post.data.pubDate}
+    updatedDate={post.data.updatedDate}
+    tags={post.data.tags}
+    heroImage={post.data.heroImage}
+    headings={headings}
+    hreflang={post.data.hreflang}
+>
+    <Content />
+</BlogPost>

@@ -7,8 +7,7 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const manuItems = [
-//    { label: m.blog(), path: localizePath("/blog", languageTag()) },
-    { label: m.blog(), path: "https://benfante.blogspot.com", external: true },
+    { label: m.blog(), path: localizePath("/blog", languageTag()), external: false },
     { label: m.curriculum(), path: localizePath("/cv", languageTag()), external: false },
   ];
 

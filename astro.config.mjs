@@ -21,10 +21,10 @@ export default defineConfig({
         },
         routing: {
             fallbackType: "rewrite",
-        },
+        }
     },
     vite: {
-        plugins: [tailwindcss()],
+       plugins: [tailwindcss()],
     },
     integrations: [
         react(),

@@ -1,8 +1,8 @@
-import { file } from "astro/loaders";
+import { file, glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
 const pages = defineCollection({
-    loader: file('src/data/ogPages.json'),
+    loader: file("src/data/ogPages.json"),
     schema: z.object({
         title: z.string().nonempty(),
         slug: z.string().nonempty(),
@@ -11,4 +11,17 @@ const pages = defineCollection({
     }),
 });
 
-export const collections = { pages };
+const blog = defineCollection({
+    loader: glob({pattern: "**/*.(md|mdx)", base: "src/content/blog"}),
+    schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        pubDate: z.date(),
+        updatedDate: z.date().optional(),
+        heroImage: z.string().optional(),
+        tags: z.array(z.string()).default([]),
+        hreflang: z.array(z.record(z.string(), z.string())).optional(),
+    }),
+});
+
+export const collections = { pages, blog };

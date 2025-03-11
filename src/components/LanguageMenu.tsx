@@ -12,13 +12,15 @@ import {
     sourceLanguageTag,
 } from "@paraglide/runtime.js";
 import * as m from "@paraglide/messages";
-import { getRouteFromUrl, localizePath } from "@libs/i18n";
+import { getRouteFromUrl, localizePath, type Hreflang } from "@libs/i18n";
 
 interface LanguageMenuProps {
     url: URL;
+    hreflang?: Hreflang[];
 }
 
-const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url }) => {
+const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflang }) => {
+    console.log(`hreflang: ${hreflang}`);
     const currentRoute = getRouteFromUrl(url);
 
     const flags = {
@@ -54,7 +56,8 @@ const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url }) => {
                                     <a
                                         href={localizePath(
                                             currentRoute,
-                                            language
+                                            language,
+                                            hreflang
                                         )}
                                         className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
                                         role="menuitem"

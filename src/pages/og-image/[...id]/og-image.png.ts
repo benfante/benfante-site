@@ -44,10 +44,24 @@ export const GET: APIRoute = async function get({ params, props, request }) {
 
 export async function getStaticPaths() {
     const pages = await getCollection("pages");
-    return pages.map((page) => {
+    const pagesPaths = pages.map((page) => {
         return {
             params: { id: page.id },
             props: page,
         };
     });
+
+    const blog = await getCollection("blog");
+    const blogPaths = blog.map((post) => {
+        const parts = post.id.split("/");
+        parts.splice(1, 0, "blog");
+        return {
+            params: { id: parts.join("/") },
+            props: post,
+        };
+    });
+
+    console.log([...pagesPaths, ...blogPaths]);
+
+    return [...pagesPaths, ...blogPaths];
 }
