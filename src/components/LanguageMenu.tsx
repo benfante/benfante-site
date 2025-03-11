@@ -20,7 +20,6 @@ interface LanguageMenuProps {
 }
 
 const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflang }) => {
-    console.log(`hreflang: ${hreflang}`);
     const currentRoute = getRouteFromUrl(url);
 
     const flags = {

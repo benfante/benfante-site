@@ -61,7 +61,5 @@ export async function getStaticPaths() {
         };
     });
 
-    console.log([...pagesPaths, ...blogPaths]);
-
     return [...pagesPaths, ...blogPaths];
 }

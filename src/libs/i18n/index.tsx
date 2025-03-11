@@ -48,11 +48,9 @@ export const removeLanguageFromPath = (path: string): string => {
         path = path.slice(1);
     }
     const parts = path.split("/");
-    console.log(`Before: ${parts}`);
     if (availableLanguageTags.includes(parts[0] as AvailableLanguageTag)) {
         parts.splice(0, 1);
     }
-    console.log(`After: ${parts}`);
     return parts.join("/");
 };
 
