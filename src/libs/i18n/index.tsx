@@ -4,6 +4,15 @@ import {
     type AvailableLanguageTag,
 } from "@libs/paraglide/runtime";
 
+import * as m from "@paraglide/messages";
+
+export const mt = m as {
+    [key: string]: (
+        params: any,
+        options?: { languageTag?: AvailableLanguageTag }
+    ) => string;
+};
+
 export type Hreflang = Partial<{
     [key in AvailableLanguageTag]: string;
 }>;
@@ -11,15 +20,21 @@ export type Hreflang = Partial<{
 export const localizePath = (
     path: string,
     lang: AvailableLanguageTag,
-    hreflang?: Hreflang[]
-) => {
+    hreflang?: Hreflang[],
+    originalTag?: string
+): string => {
+    if (originalTag) {
+        // it's a blog tag page
+        return `/${lang}/blog/tags/${resolveTag(originalTag, lang)}`;
+    }
     if (hreflang) {
+        // usually a blog post
         const href = hreflang.find((item) => Object.keys(item).includes(lang));
         if (href) {
             if (!href[lang]!.startsWith("/")) {
                 return `/${href[lang]}`;
             }
-            return href[lang];
+            return href[lang]!;
         }
     }
     if (path.startsWith("/")) {
@@ -68,4 +83,11 @@ export function getRouteFromUrl(url: URL): string {
     }
 
     return "/" + parts.join("/");
+}
+
+export function resolveTag(
+    tag: string,
+    languageTag: AvailableLanguageTag
+): string {
+    return mt[`tags_${tag}`] ? mt[`tags_${tag}`](null, { languageTag }) : tag;
 }

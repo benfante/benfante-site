@@ -2,7 +2,7 @@
 title: "Benvenuto nel Mio Blog Tecnologico"
 description: "Questo è il mio primo post sul blog riguardante tecnologia e sviluppo."
 pubDate: 2024-03-19
-tags: ["benvenuto", "introduzione", "caratteristiche"]
+tags: ["welcome", "introduction", "features"]
 hreflang:
     - en: "/en/blog/welcome/"
 ---

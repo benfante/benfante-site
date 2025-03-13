@@ -17,9 +17,10 @@ import { getRouteFromUrl, localizePath, type Hreflang } from "@libs/i18n";
 interface LanguageMenuProps {
     url: URL;
     hreflang?: Hreflang[];
+    originalTag?: string;
 }
 
-const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflang }) => {
+const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflang, originalTag }) => {
     const currentRoute = getRouteFromUrl(url);
 
     const flags = {
@@ -56,7 +57,8 @@ const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflan
                                         href={localizePath(
                                             currentRoute,
                                             language,
-                                            hreflang
+                                            hreflang,
+                                            originalTag
                                         )}
                                         className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
                                         role="menuitem"

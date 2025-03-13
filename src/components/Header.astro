@@ -4,10 +4,15 @@ import { Image } from "astro:assets";
 import logo from "@assets/logo.svg";
 import ThemeSwitcher from "@components/ThemeSwitcher.astro";
 import LanguageMenu from "./LanguageMenu";
-import { localizePath } from "@libs/i18n";
+import { localizePath, type Hreflang } from "@libs/i18n";
 import { type AvailableLanguageTag } from "@paraglide/runtime";
 
-const { hreflang } = Astro.props;
+export interface Props {
+    hreflang?: Hreflang[];
+    originalTag?: string;
+}
+
+const { hreflang, originalTag } = Astro.props;
 
 ---
 
@@ -23,6 +28,6 @@ const { hreflang } = Astro.props;
   </nav>
   <div class="flex items-center justify-between min-w-35 px-3">
     <div class="min-w-10"><ThemeSwitcher /></div>
-    <LanguageMenu url={Astro.url} hreflang={hreflang} client:load />
+    <LanguageMenu url={Astro.url} hreflang={hreflang} originalTag={originalTag} client:load />
   </div>
 </header>

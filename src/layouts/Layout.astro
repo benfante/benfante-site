@@ -3,28 +3,40 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Themes from "astro-themes";
 import { languageTag, availableLanguageTags } from "@paraglide/runtime";
-import { removeLanguageFromPath, type Hreflang, localizePath } from "@libs/i18n";
+import { removeLanguageFromPath, type Hreflang, localizePath, resolveTag } from "@libs/i18n";
 
 export interface Props {
     title?: string;
     description?: string;
     hreflang?: Hreflang[];
+    ogImage?: string;
+    originalTag?: string;
 }
 
 const {
     title = "Lucio Benfante",
     description = "Pagina personale di Lucio Benfante, sviluppatore software e docente",
-    hreflang
+    hreflang,
+    ogImage,
+    originalTag
 }: Props = Astro.props;
 
 const { href, pathname, hostname, origin } = Astro.url;
 
-const ogImagePath = (pathname: string) => {
+const ogImagePath = (pathname: string, ogImage?: string) => {
+    if (ogImage) {
+        return `${origin}${ogImage}`;
+    }
     return `${origin}/og-image${pathname.replace(/index\.html$/, "").replace(/\/$/, "")}/og-image.png`;
 };
 
 const refLangPaths = () => {
-    if (hreflang) {
+    if (originalTag) { // it's a blog tag page
+        return availableLanguageTags.filter((lang) => lang !== languageTag()).map((lang) => {
+            return ({ hreflang: lang, href: `${origin}/${lang}/blog/tags/${resolveTag(originalTag, lang)}` });
+        });
+    }
+    if (hreflang) { // usually it's a blog post page
         return hreflang.map((lang) => {
             return ({ hreflang: Object.keys(lang)[0], href: `${origin}${Object.values(lang)[0]}` });
         });
@@ -63,7 +75,7 @@ import "@styles/global.css";
             property="og:description"
             content={description}
         />
-        <meta property="og:image" content={ogImagePath(pathname)} />
+        <meta property="og:image" content={ogImagePath(pathname, ogImage)} />
         <meta property="og:logo" content={`${origin}/logo.svg`} />
 
         <!-- Twitter Meta Tags -->
@@ -78,11 +90,11 @@ import "@styles/global.css";
         {refLangPaths().map((lang) => (
             <link rel="alternate" hreflang={lang.hreflang} href={lang.href} />
         ))}
-        <meta name="twitter:image" content={ogImagePath(pathname)} />
+        <meta name="twitter:image" content={ogImagePath(pathname, ogImage)} />
         <title>{title} - Lucio Benfante</title>
     </head>
     <body class="mx-1 p-0 md:mx-16 lg:mx-32 min-h-screen">
-        <Header hreflang={hreflang}/>
+        <Header hreflang={hreflang} originalTag={originalTag} />
         <main class="my-2">
             <slot />
         </main>

@@ -2,6 +2,7 @@
 title: "Welcome to My Tech Blog"
 description: "This is my first blog post about technology and development."
 pubDate: 2024-03-19
+updatedDate: 2024-03-25
 tags: ["welcome", "introduction", "features"]
 hreflang:
     - it: "/it/blog/benvenuto"

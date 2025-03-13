@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import * as m from "@paraglide/messages";
+import { resolveTag } from "@libs/i18n"
 
 import {
     availableLanguageTags,
@@ -31,14 +32,14 @@ const allTags = [
     <div class="mb-8">
         <div class="flex justify-between items-center mb-6">
             <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
-                Ultimi articoli
+                {m.lastArticles()}
             </h1>
             <select
                 id="sort-order"
                 class="px-4 py-2 border dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
             >
-                <option value="desc">Decrescente</option>
-                <option value="asc">Crescente</option>
+                <option value="desc">{m.descending()}</option>
+                <option value="asc">{m.ascending()}</option>
             </select>
         </div>
 
@@ -49,16 +50,16 @@ const allTags = [
             <h2
                 class="text-lg font-semibold mb-4 text-gray-900 dark:text-white"
             >
-                Tags
+                {m.tags()}
             </h2>
             <div class="flex flex-wrap gap-2">
                 {
                     allTags.map((tag) => (
                         <a
-                            href={`/${lang}/blog/tags/${tag}`}
+                            href={`/${lang}/blog/tags/${resolveTag(tag, languageTag())}`}
                             class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
                         >
-                            #{tag}
+                            #{resolveTag(tag, languageTag())}
                         </a>
                     ))
                 }
@@ -84,10 +85,10 @@ const allTags = [
                         <div class="flex flex-wrap gap-2 mb-4">
                             {post.data.tags?.map((tag) => (
                                 <a
-                                    href={`/${lang}/blog/tags/${tag}`}
+                                    href={`/${lang}/blog/tags/${resolveTag(tag, languageTag())}`}
                                     class="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
                                 >
-                                    #{tag}
+                                    #{resolveTag(tag, languageTag())}
                                 </a>
                             ))}
                         </div>
@@ -95,7 +96,7 @@ const allTags = [
                             <time datetime={post.data.pubDate.toISOString()}>
                                 {post.data.pubDate.toLocaleDateString(lang, {
                                     year: "numeric",
-                                    month: "short",
+                                    month: "long",
                                     day: "numeric",
                                 })}
                             </time>

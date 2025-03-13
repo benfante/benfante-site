@@ -2,6 +2,7 @@
 import type { Hreflang } from "@libs/i18n";
 import Layout from "./Layout.astro";
 import type { MarkdownHeading } from "astro";
+import * as m from "@paraglide/messages";
 
 interface Props {
     title: string;
@@ -68,7 +69,7 @@ const lang = Astro.currentLocale;
                     {
                         updatedDate && (
                             <div class="mt-1 text-sm">
-                                Last updated on{" "}
+                                {m.lastUpdate()}{": "}
                                 <time datetime={updatedDate.toISOString()}>
                                     {updatedDate.toLocaleDateString(lang, {
                                         year: "numeric",
@@ -94,7 +95,7 @@ const lang = Astro.currentLocale;
                     >
                         <div class="flex justify-between items-center mb-4">
                             <div class="font-semibold text-gray-900 dark:text-white">
-                                Table of Contents
+                                {m.tableOfContents()}
                             </div>
                         </div>
                         <div id="toc-content">

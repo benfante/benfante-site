@@ -18,5 +18,15 @@
         "title": "Resume",
         "description": "Lucio Benfante's resume",
         "slug": "/en/cv"
+    },
+    {
+        "title": "Blog",
+        "description": "Blog di Lucio Benfante",
+        "slug": "/it/blog"
+    },
+    {
+        "title": "Blog",
+        "description": "Lucio Benfante's Blog",
+        "slug": "/en/blog"
     }
 ]

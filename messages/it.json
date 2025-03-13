@@ -12,5 +12,15 @@
     "publications": "Pubblicazioni",
     "download": "Scarica",
     "lastUpdate": "Ultimo aggiornamento",
-    "moreInfos": "Ulteriori informazioni"
+    "moreInfos": "Ulteriori informazioni",
+    "tableOfContents": "Indice",
+    "lastArticles": "Ultimi articoli",
+    "ascending": "Crescente",
+    "descending": "Decrescente",
+    "tags": "Etichette",
+    "postsTagged": "Articoli etichettati",
+    "noPostsFound": "Nessun articolo trovato",
+    "tags_welcome": "benvenuto",
+    "tags_features": "caratteristiche",
+    "tags_introduction": "introduzione"
 }

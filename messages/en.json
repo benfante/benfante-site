@@ -12,5 +12,15 @@
     "publications": "Publications",
     "download": "Download",
     "lastUpdate": "Last Update",
-    "moreInfos": "More Infos"
+    "moreInfos": "More Infos",
+    "tableOfContents": "Table of Contents",
+    "lastArticles": "Last Articles",
+    "ascending": "Ascending",
+    "descending": "Descending",
+    "tags": "Tags",
+    "postsTagged": "Posts Tagged",
+    "noPostsFound": "No Posts Found",
+    "tags_welcome": "welcome",
+    "tags_features": "features",
+    "tags_introduction": "introduction"
 }
