@@ -30,7 +30,7 @@ const lang = Astro.currentLocale;
 
 <Layout title={title} description={description} hreflang={hreflang}>
     <article
-        class="prose dark:prose-invert max-w-none prose-pre:bg-gray-800 prose-pre:border prose-pre:border-gray-700 flex flex-col-reverse md:flex-row gap-8"
+        class="prose dark:prose-invert max-w-none prose-pre:bg-gray-800 prose-pre:border prose-pre:border-gray-700 flex flex-col-reverse md:flex-row md:justify-between gap-8"
     >
         <div>
             <div class="mb-8 not-prose">
@@ -91,7 +91,7 @@ const lang = Astro.currentLocale;
                 headings.length > 0 && (
                     <div
                         id="toc-container"
-                        class="toc bg-white dark:bg-gray-800 mx-auto p-4 rounded-lg shadow-lg border dark:border-gray-700 w-64 sticky top-2"
+                        class="toc bg-white dark:bg-gray-800 mx-auto p-4 rounded-lg shadow-lg border dark:border-gray-700 w-64 sticky top-2 -z-1"
                     >
                         <div class="flex justify-between items-center mb-4">
                             <div class="font-semibold text-gray-900 dark:text-white">
