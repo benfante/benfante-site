@@ -4,17 +4,6 @@ export interface Props {
 }
 
 const { level = "info" }: Props = Astro.props;
-
-const colors = {
-    info: "blue",
-    warning: "yellow",
-    error: "red",
-    success: "green",
-};
-
-const bgColor = `bg-${colors[level]}-100 dark:bg-${colors[level]}-900`;
-const textColor = `text-${colors[level]}-600 dark:text-${colors[level]}-300`;
-
 ---
 <div
     class={`flex items-center justify-between p-5 leading-normal ${level} rounded-lg`}
