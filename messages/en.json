@@ -22,5 +22,7 @@
     "noPostsFound": "No Posts Found",
     "tags_welcome": "welcome",
     "tags_features": "features",
-    "tags_introduction": "introduction"
+    "tags_introduction": "introduction",
+    "oldBlogAlert": "Are you looking for articles from my old blog?",
+    "youCanFindThemHere": "You can find them here"
 }

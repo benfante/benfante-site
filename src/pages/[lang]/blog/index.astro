@@ -1,8 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Alert from "@components/Alert.astro";
 import { getCollection } from "astro:content";
 import * as m from "@paraglide/messages";
-import { resolveTag } from "@libs/i18n"
+import { resolveTag } from "@libs/i18n";
 
 import {
     availableLanguageTags,
@@ -12,7 +13,7 @@ import {
 } from "@paraglide/runtime.js";
 
 export async function getStaticPaths() {
-  return availableLanguageTags.map(lang => ({ params: { lang } }));
+    return availableLanguageTags.map((lang) => ({ params: { lang } }));
 }
 
 const lang = Astro.currentLocale;
@@ -30,6 +31,15 @@ const allTags = [
 
 <Layout title="Blog" description="Lucio Benfante's blog">
     <div class="mb-8">
+        <Alert>
+            {m.oldBlogAlert()} &nbsp;
+            {m.youCanFindThemHere()}: <a
+                href="https://benfante.blogspot.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Old blog">benfante.blogspot.com</a
+            >
+        </Alert>
         <div class="flex justify-between items-center mb-6">
             <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
                 {m.lastArticles()}
@@ -45,7 +55,7 @@ const allTags = [
 
         <!-- Tags at the top -->
         <div
-            class="bg-white dark:bg-gray-800 p-6 rounded-lg border dark:border-gray-700 mb-8"
+            class="p-6 rounded-lg border dark:border-gray-700 mb-8"
         >
             <h2
                 class="text-lg font-semibold mb-4 text-gray-900 dark:text-white"
@@ -109,7 +119,9 @@ const allTags = [
 </Layout>
 
 <script>
-    const sortOrder = document.getElementById("sort-order") as HTMLSelectElement;
+    const sortOrder = document.getElementById(
+        "sort-order"
+    ) as HTMLSelectElement;
     const postsContainer = document.getElementById("posts-container");
     const posts = [...postsContainer!.children];
 

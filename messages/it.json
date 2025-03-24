@@ -22,5 +22,7 @@
     "noPostsFound": "Nessun articolo trovato",
     "tags_welcome": "benvenuto",
     "tags_features": "caratteristiche",
-    "tags_introduction": "introduzione"
+    "tags_introduction": "introduzione",
+    "oldBlogAlert": "Stai cercando gli articli del mio vecchio blog?",
+    "youCanFindThemHere": "Puoi trovarli qui"
 }
