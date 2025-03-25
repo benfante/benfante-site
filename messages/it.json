@@ -24,5 +24,7 @@
     "tags_features": "caratteristiche",
     "tags_introduction": "introduzione",
     "oldBlogAlert": "Stai cercando gli articoli del mio vecchio blog?",
-    "youCanFindThemHere": "Puoi trovarli qui"
+    "youCanFindThemHere": "Puoi trovarli qui",
+    "postCommentsDisabled": "I commenti sono disabilitati per questo articolo",
+    "comments": "Commenti"
 }

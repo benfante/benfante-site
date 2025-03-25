@@ -21,6 +21,7 @@ const blog = defineCollection({
         heroImage: z.string().optional(),
         tags: z.array(z.string()).default([]),
         hreflang: z.array(z.record(z.string(), z.string())).optional(),
+        discussionId: z.number().optional(),
     }),
 });
 

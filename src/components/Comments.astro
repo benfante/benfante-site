@@ -1,0 +1,60 @@
+---
+/**
+ * Comments component
+ * 
+ * Based on Giscus
+ * 
+ * @see https://giscus.app/
+ * @see https://www.maxpou.fr/blog/giscus-with-astro/
+ */
+import type { AvailableLanguageTag } from '@libs/paraglide/runtime';
+import * as m from '@paraglide/messages';
+
+export interface Props {
+    discussionId?: number;
+    lang?: AvailableLanguageTag
+}
+
+const { discussionId, lang = "it" } = Astro.props;
+const { origin } = Astro.url;
+---
+{discussionId ?
+<section class="mx-auto mt-12">
+    <script
+        is:inline
+        src="https://giscus.app/client.js"
+        data-repo="benfante/benfante-site"
+        data-repo-id="R_kgDON3Mh-Q"
+        data-mapping="number"
+        data-term={discussionId}
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang={lang}
+        crossorigin="anonymous"
+        async></script>
+</section>
+<script is:inline>
+  function updateGiscusTheme() {
+    const theme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (!iframe) {
+        setTimeout(updateGiscusTheme, 1000)
+        return
+    }
+    iframe.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app')
+  }
+
+  const observer = new MutationObserver(updateGiscusTheme)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+
+  window.addEventListener('load', () => {
+    updateGiscusTheme()
+  })
+</script>
+: <div class="text-gray-600 dark:text-gray-400">
+    <p>
+        {m.postCommentsDisabled()}
+    </p>
+</div>}

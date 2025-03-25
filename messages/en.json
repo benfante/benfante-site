@@ -24,5 +24,7 @@
     "tags_features": "features",
     "tags_introduction": "introduction",
     "oldBlogAlert": "Are you looking for articles from my old blog?",
-    "youCanFindThemHere": "You can find them here"
+    "youCanFindThemHere": "You can find them here",
+    "postCommentsDisabled": "Comments are disabled for this post",
+    "comments": "Comments"
 }

@@ -43,7 +43,7 @@ const LanguageMenu: React.FunctionComponent<LanguageMenuProps> = ({ url, hreflan
                         <OpenMenuIcon className="w-5 h-5 ml-2 -mr-1" />
                     </button>
                 </span>
-                <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                <div className="relative opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95 z-50">
                     <div
                         className="absolute right-0 mt-2 origin-top-right bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-950 divide-y divide-gray-100 rounded-md shadow-lg dark:shadow-gray-400 outline-none"
                         aria-labelledby="headlessui-menu-button-1"

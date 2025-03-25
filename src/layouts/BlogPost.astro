@@ -3,6 +3,8 @@ import type { Hreflang } from "@libs/i18n";
 import Layout from "./Layout.astro";
 import type { MarkdownHeading } from "astro";
 import * as m from "@paraglide/messages";
+import Comments from "@components/Comments.astro";
+import type { AvailableLanguageTag } from "@libs/paraglide/runtime";
 
 interface Props {
     title: string;
@@ -13,6 +15,7 @@ interface Props {
     heroImage?: string;
     headings: MarkdownHeading[];
     hreflang?: Hreflang[];
+    discussionId?: number;
 }
 
 const {
@@ -23,9 +26,10 @@ const {
     tags = [],
     headings,
     hreflang,
+    discussionId,
 } = Astro.props;
 
-const lang = Astro.currentLocale;
+const lang = Astro.currentLocale as AvailableLanguageTag;
 ---
 
 <Layout title={title} description={description} hreflang={hreflang}>
@@ -84,6 +88,13 @@ const lang = Astro.currentLocale;
             </div>
 
             <slot />
+
+            <div>
+                <h2 id="comments_section">
+                    {m.comments()}
+                </h2>
+                <Comments discussionId={discussionId} lang={lang}/>
+            </div>
         </div>
         <div>
             {/* TOC */}
@@ -91,7 +102,7 @@ const lang = Astro.currentLocale;
                 headings.length > 0 && (
                     <div
                         id="toc-container"
-                        class="toc bg-white dark:bg-gray-800 mx-auto p-4 rounded-lg shadow-lg border dark:border-gray-700 w-64 sticky top-2 -z-1"
+                        class="toc bg-white dark:bg-gray-800 mx-auto p-4 rounded-lg shadow-lg border dark:border-gray-700 w-64 sticky top-2 z-10"
                     >
                         <div class="flex justify-between items-center mb-4">
                             <div class="font-semibold text-gray-900 dark:text-white">
@@ -113,6 +124,14 @@ const lang = Astro.currentLocale;
                                         </a>
                                     </li>
                                 ))}
+                                <li class="toc-item">
+                                    <a
+                                        href="#comments_section"
+                                        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white block transition-colors duration-200"
+                                    >
+                                        {m.comments()}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

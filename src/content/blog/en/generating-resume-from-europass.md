@@ -5,6 +5,7 @@ pubDate: 2025-03-21
 tags: ["development", "javascript", "typescript", "astro", "xml", "json", "europass"]
 hreflang:
     - it: "/it/blog/generare-cv-da-europass"
+discussionId: 1
 ---
 ## Introduction
 
