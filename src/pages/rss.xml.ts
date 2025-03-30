@@ -34,7 +34,7 @@ export async function GET(context: Context): Promise<Response> {
                 categories: post.data.tags,
                 customData: `<language>${lang}</language>`,
                 author: 'lucio@benfante.com',
-                commentsUrl: `${link}#comments`,                
+                commentsUrl: `${link}#comments_section`,                
             };
         }),
     });
