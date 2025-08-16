@@ -53,6 +53,33 @@
         <hr:ID schemeID="Test-0001" schemeName="CandidateProfileID" schemeAgencyName="EUROPASS" schemeVersionID="1.0"/>
         <EmploymentHistory>
             <EmployerHistory>
+                <hr:OrganizationName>FONDAZIONE ITS ACADEMY MECCATRONICO VENETO</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Vicenza</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                    <Communication>
+                        <ChannelCode>Web</ChannelCode>
+                        <oa:URI>https://www.itsmeccatronico.it</oa:URI>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Docente</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2025-05</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <hr:CurrentIndicator>true</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;TECNICO SUPERIORE PER L’INFORMATICA NELL’INDUSTRIA 4.0&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;UF 9 – LINGUAGGI DI PROGRAMMAZIONE&lt;/p&gt;&lt;p&gt;UF 13 – TEAM WORKING&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Modulo: Sviluppo Web in Java con Spring Boot&lt;/p&gt;</oa:Description>
+                    <City>Vicenza</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
                 <hr:OrganizationName>CRESCENDO Digital Transformation S.r.l. </hr:OrganizationName>
                 <OrganizationContact>
                     <Communication>
@@ -1077,6 +1104,36 @@
                 </EducationDegree>
                 <Link>https://www.youracclaim.com/badges/c387418a-0410-4626-9820-93cd20629cc6/public_url</Link>
             </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>MongoDB</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                    <Communication>
+                        <ChannelCode>Web</ChannelCode>
+                        <oa:URI>https://www.mongodb.com/</oa:URI>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2025-08-13</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>true</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>MongoDB Associate Developer</hr:DegreeName>
+                    <FieldOfStudy typeCode="URI">
+                        <MainFieldOfStudy>
+                            <ProgramConcentration>06</ProgramConcentration>
+                        </MainFieldOfStudy>
+                        <SpecificFieldOfStudy>
+                            <ProgramConcentration>0613</ProgramConcentration>
+                        </SpecificFieldOfStudy>
+                    </FieldOfStudy>
+                </EducationDegree>
+                <Link>https://www.credly.com/badges/b3f7468a-d411-40e5-82d6-4a58fa35344d/public_url</Link>
+            </EducationOrganizationAttendance>
         </EducationHistory>
         <eures:Licenses/>
         <Certifications/>
@@ -1274,36 +1331,85 @@
         <CreativeWorks/>
         <Projects/>
         <SocialAndPoliticalActivities/>
-        <CommunicationAndInterpersonalSkills/>
-        <DigitalSkills>
-            <DigitalSkillsGroup>
+        <Skills>
+            <SkillsGroup>
                 <Title>Linguaggi di Programmazione</Title>
-                <DigitalSkill>Java</DigitalSkill>
-                <DigitalSkill>Javascript</DigitalSkill>
-                <DigitalSkill>JSF</DigitalSkill>
-                <DigitalSkill>C/C++</DigitalSkill>
-                <DigitalSkill>PHP</DigitalSkill>
-            </DigitalSkillsGroup>
-            <DigitalSkillsGroup>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Java</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Javascript</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>JSF</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>C/C++</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>PHP</hr:CompetencyName>
+                </PersonCompetency>
+            </SkillsGroup>
+            <SkillsGroup>
                 <Title>Tecnologie Java</Title>
-                <DigitalSkill>Hibernate/JPA</DigitalSkill>
-                <DigitalSkill>Struts</DigitalSkill>
-                <DigitalSkill>Servlet/JSP</DigitalSkill>
-                <DigitalSkill>Spring Framework</DigitalSkill>
-                <DigitalSkill>Spring Boot</DigitalSkill>
-                <DigitalSkill>Spring MVC</DigitalSkill>
-            </DigitalSkillsGroup>
-            <DigitalSkillsGroup>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Hibernate/JPA</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Struts</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Servlet/JSP</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Spring Framework</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Spring Boot</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Spring MVC</hr:CompetencyName>
+                </PersonCompetency>
+            </SkillsGroup>
+            <SkillsGroup>
                 <Title>Sistemi di Gestione di Basi di Dati (DBMS)</Title>
-                <DigitalSkill>PostgreSQL</DigitalSkill>
-                <DigitalSkill>Oracle 9, 10</DigitalSkill>
-                <DigitalSkill>HSQLDB</DigitalSkill>
-                <DigitalSkill>MySql</DigitalSkill>
-                <DigitalSkill>DB2</DigitalSkill>
-                <DigitalSkill>Informix Dynamic Server</DigitalSkill>
-            </DigitalSkillsGroup>
-            <DigitalSkillsGroup/>
-        </DigitalSkills>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>PostgreSQL</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Oracle 9, 10</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>HSQLDB</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>MySql</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>DB2</hr:CompetencyName>
+                </PersonCompetency>
+                <PersonCompetency>
+                    <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                    <hr:CompetencyName>Informix Dynamic Server</hr:CompetencyName>
+                </PersonCompetency>
+            </SkillsGroup>
+        </Skills>
         <NetworksAndMemberships>
             <NetworkAndMembership>
                 <Activity>
@@ -1352,7 +1458,7 @@
                     <Title>language</Title>
                 </Section>
                 <Section>
-                    <Title>digital-skills</Title>
+                    <Title>profile-skills</Title>
                 </Section>
                 <Section>
                     <Title>publication</Title>
@@ -1366,7 +1472,7 @@
             <Statement>Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”. </Statement>
             <Place>San Bonifacio</Place>
             <Date>
-                <hr:FormattedDateTime>2025-02-13</hr:FormattedDateTime>
+                <hr:FormattedDateTime>2025-08-16</hr:FormattedDateTime>
             </Date>
         </ClosingStatement>
     </RenderingInformation>
